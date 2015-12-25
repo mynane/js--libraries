@@ -103,3 +103,8 @@ function getWordcnt(){
 		return prev;
 	},{});
 }
+
+
+/**
+ * 未完待续。。。。
+ */
