@@ -1,0 +1,66 @@
+<!DOCTYPE html><html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../style/dest/jingoal.css" />
+        <link rel="stylesheet" href="static/doc.css" />
+        <link rel="stylesheet" href="static/prettify.css" />
+        <script type="text/javascript" src="../src/iespt/cssfunc.js"></script>
+        <!-- ie 兼容 -->
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="../src/iespt/ie-es5.js"></script>
+            <script src="../src/iespt/css3-mediaqueries.js"></script>
+            <script src="../src/iespt/json2.js"></script>
+        <![endif]-->
+        <!-- ecui 主文件 -->
+        <script type="text/javascript" src="../src/ecui/ecui.js"></script>
+        <!-- require 主文件 -->
+        <script type="text/javascript" src="../src/require/require.js"></script>
+        <!-- require 配置文件 -->
+        <script type="text/javascript">
+            require.config({
+                baseUrl:"./",
+                paths:{
+                    module:"../src"
+                }
+            });
+        </script>
+        <script type="text/javascript" src="ecui/demo.js"></script>
+        
+        <!--平台入口文件-->
+        <script type="text/javascript" src="static/doc.js"></script>
+        <title>webdemo</title>
+    </head>
+    <body ui="globalId:true">
+        <div class="doc_wrap">
+            <div class="doc_left">
+                <ul>
+                    <li><a href="#form">表单</a></li>
+                    <li><a href="#hazer">hazer</a></li>
+                    <li><a href="#modal">弹框</a></li>
+                    <li><a href="#btn">按钮</a></li>
+                    <li><a href="#page">分页</a></li>
+                    <li><a href="#icon">图标</a></li>
+                    <li><a href="#tree">树</a></li>
+                    <li><a href="#person_index">人员索引</a></li>
+                    <li><a href="#person_list">人员列表</a></li>
+                    <li><a href="#remind">提醒方式</a></li>
+                    <li><a href="#person_choose">人员选择树</a></li>
+                    <li><a href="#calendar">台历</a></li>
+                    <li><a href="#menu">菜单</a></li>
+                    <li><a href="#list">列表</a></li>
+                    <li><a href="#show_detail">显示详情</a></li>
+                    <li><a href="#workbench">工作台</a></li>
+                    <li><a href="#layout">布局</a></li>
+                </ul>
+            </div>
+            <div class="doc_right">
+                <div id="main_container"></div>
+            </div>
+        </div>
+        <pre id="source" class="prettyprint"></pre>
+        <script src="static/prettify.js"></script>
+        
+    </body>
+</html>

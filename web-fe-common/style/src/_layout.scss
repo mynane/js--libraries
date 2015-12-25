@@ -1,0 +1,9 @@
+.layout-float-wrap{
+    @include clearfix;
+    .layout-float-left{
+        float: left;
+    }
+    .layout-float-right{
+        float: right;
+    }
+}

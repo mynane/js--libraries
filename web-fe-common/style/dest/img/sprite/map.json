@@ -1,0 +1,806 @@
+{
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-arrow-left-disable.png": {
+        "width": 12,
+        "height": 20,
+        "x": 115,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-arrow-left-hover.png": {
+        "width": 12,
+        "height": 20,
+        "x": 115,
+        "y": 10
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-arrow-left.png": {
+        "width": 12,
+        "height": 20,
+        "x": 115,
+        "y": 20
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-arrow-right-disable.png": {
+        "width": 12,
+        "height": 20,
+        "x": 115,
+        "y": 30
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-arrow-right-hover.png": {
+        "width": 12,
+        "height": 20,
+        "x": 115,
+        "y": 40
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-arrow-right.png": {
+        "width": 12,
+        "height": 20,
+        "x": 115,
+        "y": 50
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-cross.png": {
+        "width": 18,
+        "height": 18,
+        "x": 147,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-circle.png": {
+        "width": 20,
+        "height": 20,
+        "x": 137,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-cross-del-deepcolor.png": {
+        "width": 20,
+        "height": 20,
+        "x": 137,
+        "y": 10
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-cross-del.png": {
+        "width": 20,
+        "height": 20,
+        "x": 137,
+        "y": 20
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-menu2-item-select.png": {
+        "width": 20,
+        "height": 20,
+        "x": 137,
+        "y": 30
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-menu2-item.png": {
+        "width": 20,
+        "height": 20,
+        "x": 137,
+        "y": 40
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-link.png": {
+        "width": 22,
+        "height": 24,
+        "x": 274,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-refresh-blue.png": {
+        "width": 26,
+        "height": 31,
+        "x": 349,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-refresh-grey.png": {
+        "width": 26,
+        "height": 31,
+        "x": 349,
+        "y": 16
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-email-grey.png": {
+        "width": 28,
+        "height": 22,
+        "x": 171,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-email-white.png": {
+        "width": 28,
+        "height": 22,
+        "x": 171,
+        "y": 11
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-hasquestion.png": {
+        "width": 28,
+        "height": 28,
+        "x": 171,
+        "y": 22
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-del.png": {
+        "width": 30,
+        "height": 32,
+        "x": 156,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-radio-checked.png": {
+        "width": 30,
+        "height": 30,
+        "x": 156,
+        "y": 16
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-radio.png": {
+        "width": 30,
+        "height": 30,
+        "x": 156,
+        "y": 31
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-search-grey.png": {
+        "width": 30,
+        "height": 30,
+        "x": 156,
+        "y": 46
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-search-white.png": {
+        "width": 30,
+        "height": 30,
+        "x": 156,
+        "y": 61
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-calendar-allcalendar-hover.png": {
+        "width": 32,
+        "height": 32,
+        "x": 121,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-calendar-allcalendar.png": {
+        "width": 32,
+        "height": 32,
+        "x": 121,
+        "y": 16
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-checkbox-checked.png": {
+        "width": 32,
+        "height": 32,
+        "x": 121,
+        "y": 32
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-checkbox.png": {
+        "width": 32,
+        "height": 32,
+        "x": 121,
+        "y": 48
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-setup-blue.png": {
+        "width": 32,
+        "height": 32,
+        "x": 121,
+        "y": 64
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-setup-grey.png": {
+        "width": 32,
+        "height": 32,
+        "x": 121,
+        "y": 80
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-address.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-approve.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 18
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-attendance.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 36
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-bbs.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 54
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-calendar.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 72
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-client.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 90
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-community.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 108
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-discuss.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 126
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-disk.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 144
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-eg.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 162
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-groups.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 180
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-igoal.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 198
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-know.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 216
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-plan.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 234
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-relacomp.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 252
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-weibo.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 270
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-worklog.png": {
+        "width": 36,
+        "height": 36,
+        "x": 0,
+        "y": 288
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-attent.png": {
+        "width": 37,
+        "height": 36,
+        "x": 18,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-broadcast.png": {
+        "width": 37,
+        "height": 36,
+        "x": 18,
+        "y": 18
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-communicate.png": {
+        "width": 37,
+        "height": 36,
+        "x": 18,
+        "y": 36
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-mail.png": {
+        "width": 37,
+        "height": 36,
+        "x": 18,
+        "y": 54
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-memo.png": {
+        "width": 37,
+        "height": 36,
+        "x": 18,
+        "y": 72
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-project.png": {
+        "width": 37,
+        "height": 36,
+        "x": 18,
+        "y": 90
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-sms.png": {
+        "width": 37,
+        "height": 36,
+        "x": 18,
+        "y": 108
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-sysremd.png": {
+        "width": 37,
+        "height": 36,
+        "x": 18,
+        "y": 126
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app18-task.png": {
+        "width": 37,
+        "height": 36,
+        "x": 18,
+        "y": 144
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-apk.png": {
+        "width": 52,
+        "height": 64,
+        "x": 185,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-damage.png": {
+        "width": 52,
+        "height": 64,
+        "x": 185,
+        "y": 32
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-doc.png": {
+        "width": 52,
+        "height": 64,
+        "x": 185,
+        "y": 64
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-html.png": {
+        "width": 52,
+        "height": 64,
+        "x": 185,
+        "y": 96
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-java.png": {
+        "width": 52,
+        "height": 64,
+        "x": 185,
+        "y": 128
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-jpg.png": {
+        "width": 52,
+        "height": 64,
+        "x": 185,
+        "y": 160
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-music.png": {
+        "width": 52,
+        "height": 64,
+        "x": 185,
+        "y": 192
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-pdf.png": {
+        "width": 52,
+        "height": 64,
+        "x": 185,
+        "y": 224
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-ppt.png": {
+        "width": 52,
+        "height": 64,
+        "x": 185,
+        "y": 256
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-txt.png": {
+        "width": 52,
+        "height": 64,
+        "x": 185,
+        "y": 288
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-unknown.png": {
+        "width": 52,
+        "height": 64,
+        "x": 185,
+        "y": 320
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-video.png": {
+        "width": 52,
+        "height": 64,
+        "x": 185,
+        "y": 352
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-xls.png": {
+        "width": 52,
+        "height": 64,
+        "x": 185,
+        "y": 384
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-zip.png": {
+        "width": 52,
+        "height": 64,
+        "x": 185,
+        "y": 416
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-address.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-approve.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 30
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-attendance.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 60
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-attent.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 90
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-bbs.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 120
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-broadcast.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 150
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-calendar.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 180
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-client.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 210
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-communicate.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 240
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-community.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 270
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-discuss.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 300
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-disk.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 330
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-eg.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 360
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-groups.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 390
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-igoal.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 420
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-know.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 450
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-mail.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 480
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-memo.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 510
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-plan.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 540
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-project.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 570
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-relacomp.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 600
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-sms.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 630
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-sysremd.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 660
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-task.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 690
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-weibo.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 720
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app30-worklog.png": {
+        "width": 60,
+        "height": 60,
+        "x": 37,
+        "y": 750
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-rar.png": {
+        "width": 61,
+        "height": 64,
+        "x": 243,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-cloud.png": {
+        "width": 64,
+        "height": 55,
+        "x": 211,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-file32-folder.png": {
+        "width": 64,
+        "height": 57,
+        "x": 211,
+        "y": 28
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-modal-ask-small.png": {
+        "width": 64,
+        "height": 64,
+        "x": 211,
+        "y": 57
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-modal-error-small.png": {
+        "width": 64,
+        "height": 64,
+        "x": 211,
+        "y": 89
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-modal-success-small.png": {
+        "width": 64,
+        "height": 64,
+        "x": 211,
+        "y": 121
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-modal-warn-blue-small.png": {
+        "width": 64,
+        "height": 64,
+        "x": 211,
+        "y": 153
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-modal-warn-red-small.png": {
+        "width": 64,
+        "height": 64,
+        "x": 211,
+        "y": 185
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-address.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-approve.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 48
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-attendance.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 96
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-attent.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 144
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-bbs.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 192
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-broadcast.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 240
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-calendar.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 288
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-client.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 336
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-communicate.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 384
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-community.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 432
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-discuss.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 480
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-disk.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 528
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-eg.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 576
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-groups.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 624
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-igoal.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 672
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-know.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 720
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-mail.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 768
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-memo.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 816
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-plan.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 864
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-project.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 912
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-relacomp.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 960
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-sms.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 1008
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-sysremd.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 1056
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-task.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 1104
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-weibo.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 1152
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-app48-worklog.png": {
+        "width": 96,
+        "height": 96,
+        "x": 67,
+        "y": 1200
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-modal-ask-big.png": {
+        "width": 128,
+        "height": 128,
+        "x": 285,
+        "y": 0
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-modal-error-big.png": {
+        "width": 128,
+        "height": 128,
+        "x": 285,
+        "y": 64
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-modal-success-big.png": {
+        "width": 128,
+        "height": 128,
+        "x": 285,
+        "y": 128
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-modal-warn-blue-big.png": {
+        "width": 128,
+        "height": 128,
+        "x": 285,
+        "y": 192
+    },
+    "D:\\gitcode\\jingoalcode\\web-fe-common\\style\\dest\\img\\1x\\icon-modal-warn-red-big.png": {
+        "width": 128,
+        "height": 128,
+        "x": 285,
+        "y": 256
+    }
+}

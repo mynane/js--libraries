@@ -1,0 +1,124 @@
+.w3n{
+    width:80px;
+}
+.w4n{
+    width:110px;
+}
+.w5n{
+    width:140px;
+}
+.w6n{
+    width:170px;
+}
+.w7n{
+    width:200px;
+}
+.w8n{
+    width:230px;
+}
+.w9n{
+    width:260px;
+}
+.w10n{
+    width:290px;
+}
+.w11n{
+    width:320px;
+}
+.w12n{
+    width:350px;
+}
+.w13n{
+    width:380px;
+}
+.w14n{
+    width:410px;
+}
+.w15n{
+    width:440px;
+}
+.w428{
+    width:428px;
+}
+html,body,
+input,button{
+    font-size:12px;
+    font-family:  "Helvetica", "Tahoma", "Microsoft Yahei", "微软雅黑", "Simsun", "宋体";
+}
+.clearfix {
+    @include clearfix;
+}
+.clear{
+    clear:both;
+}
+ul,li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+input{
+    font-size:12px;
+}
+#ECUI_LOCATOR{
+    position:fixed;
+    left:-9999px;
+}
+.font-red{
+    color:#ff5533;
+}
+.font-blue{
+    color:#2299ee;
+}
+.font-grey{
+    color:$greyColor;
+}
+.inline-block,.inline-block-top,.inline-block-middle{
+    display:inline-block;
+}
+.inline-block-top{
+    vertical-align:top;
+}
+.inline-block-middle{
+    vertical-align:middle;
+}
+.mid-text,.mid-helper,.mid-icon,.icon-text{
+    display:inline-block;
+    float: none!important;
+    vertical-align:middle;
+}
+.icon-text{
+    .mid-icon{
+        margin-right: 6px;
+    }
+}
+.vertical-middle{
+    font-size:0;
+    line-height: normal!important;
+    white-space: nowrap;
+    @include before('\200B'){
+        display:inline-block;
+        vertical-align:middle;
+        width:0px;
+        height:100%;
+    }
+    .mid-icon{
+        font-size: 0;
+    }
+    .mid-text,.mid-icon{
+        font-size: 12px;
+    }
+    .mid-text{
+        margin-top:3px\9;
+        :root{
+            margin-top:0px\9;
+        }
+    }
+}
+.mid-helper{
+    width:0px;
+    height:100%;
+    &.mid-text{
+        width:auto;
+        margin-left:auto;
+    }
+}

@@ -1,0 +1,108 @@
+.modal-new-calendar{
+    width:610px;
+    .form-list{
+        padding: 20px 0 0 24px;
+        .form-item{
+            .topic-detail{
+                height:48px;
+            }
+            .secondinput{
+                margin-left:10px;
+            }
+            .topline{
+                margin-bottom:10px;
+            }
+            .third-element{
+                height: 34px;
+                .label-wrap{
+                    height: 34px;
+                    line-height: 34px;
+                }
+                margin-left: 9px;
+            }
+            .secondline{
+                margin-top:10px;
+            }
+            .right-cols{
+                height: 34px;
+            }
+            .person-add{
+                width:32px;
+                height: 32px;
+                border:1px solid $commonBorderColor;
+                text-align: center;
+                cursor: pointer;
+            }
+            .linkfile{
+                color:#656666;
+                margin:0 10px 0 38px;
+            }
+        }
+    }
+    
+    .w408{
+        width:408px;
+    }
+    .w410{
+        width:410px;
+    }
+    .w200{
+        width:200px;
+    }
+    .w426{
+        width:426px;
+    }
+}
+.modal-wrap.calendar-event-detail{
+    .modal-title .right-title{
+        color:#656666;
+        height: 18px;
+    }
+    .modal-body{
+        width:370px;
+        padding-bottom:16px;
+        .event-detail-title{
+            .title-left{
+                &>h3{
+                    font-size:18px;
+                    font-weight: normal;
+                    margin:15px 0 0 10px
+                }
+                .start-time,.end-time{
+                    margin:7px 0 0 9px;
+                    color:#666666;
+                }
+            }
+            .title-right{
+                width:52px;
+                text-align: center;
+                img{
+                    width:52px;
+                    height: 52px;
+                    border-radius:52px;
+                    margin-top:19px;
+                    margin-left:2px;
+                }
+                .person-name{
+                    margin-top:7px;
+                    color:#2299ee;
+                }
+            }
+        }
+        .import-list{
+            margin-top:10px;
+        }
+    }
+    .modal-footer{
+        .link{
+            color:$blueColor;
+            text-align: center;
+            padding: 0px 7px;
+            cursor: pointer;
+            border-right: 1px solid $commonBorderColor;
+            &.last{
+                border-right:0;
+            }
+        }
+    }
+}

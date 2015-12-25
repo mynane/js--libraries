@@ -1,0 +1,16 @@
+@mixin button-reset{
+    font-family: SimSun "宋体";
+    font-size:12px;
+    margin:0;
+    padding:0;
+    border:0;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius:$btnBorderRadius;
+    outline: none;
+    float:none!important;
+    letter-spacing: normal;
+    border:1px solid #d7d8d9;
+    background: linear-gradient(rgba(252,252,252,1), rgba(247,247,247,1));
+}

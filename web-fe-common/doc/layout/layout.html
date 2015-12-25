@@ -1,0 +1,163 @@
+<!-- target:layout -->
+<div ui="type:demo" class="demo-wrap">
+    <dl class="demo_title">
+        <dt>
+            垂直居中布局
+        </dt>
+        <dd>
+            <h1>水平列表，垂直居中-图标+文字 或者 图标+图标</h1>
+            <p>布局技巧:<br />
+            <em>这种布局用于小范围的垂直居中布局当中</em>
+            父元素要明确的设置高度，<br />
+            给父元素加一个vertical-middle 的类，<br />
+            然后子元素之前不要有空格,<br />
+            并且子元素加上mid-icon或者mid-text的类</p>
+            <code>
+                <div style="height:30px;border:1px solid #ccc;"  class="vertical-middle">
+                    <i class="icon-triangle-left mid-icon"></i>
+                    <span class="mid-text">左三角形</span>
+                </div>
+            </code>
+            <code>
+                <div style="height:30px;border:1px solid #ccc;" class="vertical-middle">
+                    <i class="icon-setup mid-icon"></i>
+                    <span class="mid-text">左三角形</span>
+                </div>
+            </code>
+            <code>
+                <div style="height:50px;border:1px solid #ccc;" class="vertical-middle">
+                    <i class="icon-modal-success-small mid-icon"></i>
+                    <span class="mid-text">左三角形</span>
+                </div>
+            </code>
+            <code>
+                <div style="height:50px;border:1px solid #ccc;" class="vertical-middle">
+                    <i class="icon-modal-success-small mid-icon"></i>
+                    <i class="icon-modal-success-small mid-icon"></i>
+                    <i class="icon-modal-success-small mid-icon"></i> 
+                </div>
+            </code>
+        </dd>
+    </dl>
+    <dl class="demo_title">
+        <dt>
+            左右布局
+        </dt>
+        <dd>
+            <h1>水平列表，垂直居中-图标+文字 或者 图标+图标</h1>
+            <p>布局技巧:<br />
+            <em>这种布局用于比较页面级别的，范围比较大的左右布局，一般左右是多行</em>
+            这种布局的特点就是兼容性好，顶端对齐<br />
+            </p>
+            <h1>左右空间严格计算</h1>
+            <code>
+                <div style="width:500px;border:1px solid #ccc;"  class="layout-float-wrap">
+                    <div class="layout-float-left" style="width:198px;border:1px solid #ccc">左边</div>
+                    <div class="layout-float-left" style="width:198px;height:200px;border:1px solid #ccc;margin-left:100px;">右边，我离昨天100的margin哦</div>
+                </div>
+            </code>
+            <h1>左右空间充裕</h1>
+            <code>
+                <div style="width:500px;border:1px solid #ccc;"  class="layout-float-wrap">
+                    <div class="layout-float-left" style="border:1px solid #ccc">左边</div>
+                    <div class="layout-float-right" style="border:1px solid #ccc;height:200px;">右边</div>
+                </div>
+            </code>
+            <h1>里面元素自适应，但是充分里面空间进行流式排列</h1>
+            <code>
+                <div style="width:470px;border:1px solid #ccc;overflow:hidden;">
+                    <div class="layout-float-wrap" style="width:120%;">
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">左边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                        <div class="layout-float-left" style="border:1px solid #ccc;width:48px;height:48px;margin-right:10px;">右边</div>
+                    </div>
+                </div>
+            </code>
+        </dd>
+    </dl>
+    <dl class="demo_title">
+        <dt>
+            水平布局 一列固定，一列可变式布局
+        </dt>
+        <dd>
+            
+            <p>布局技巧:<br />
+            <em>可以算是自适应布局</em>
+            </p>
+            <h1>通过absolute定位实现</h1>
+            <p>布局技巧:<br />
+                <em>父元素的宽度由，非可变元素的高度决定</em>
+            </p>
+            <code>
+                <div style="width:100%;border:1px solid #ccc;position:relative;">
+                    <div style="width:200px;border:1px solid #ccc;position:absolute;top:0;left:0;">左侧固定</div>
+                    <div style="margin-left:200px;border:1px solid #ccc;background:red; height:200px;">右侧可变</div>
+                </div>
+            </code>
+            <h1>通过float+margin实现</h1>
+            <p>布局技巧:<br />
+                <em>浮动元素要写在可变元素的前面</em>
+                <em>父元素的高度由可变元素决定</em>
+            </p>
+            <code>
+                <div style="width:100%;border:1px solid #ccc;" class="layout-float-wrap">
+                    <div class="layout-float-left" style="width:198px;border:1px solid #ccc;">左侧固定</div>
+                    <div class="layout-float-right" style="border:1px solid #333;background:red; height:198px;width:198px;">右侧固定</div>
+                    <div style="margin:0 200px;background:blue;height:300px;">中间可变</div>
+                </div>
+            </code>
+        </dd>
+    </dl>
+    <dl class="demo_title">
+        <dt>
+            宽，高100%的写法
+        </dt>
+        <dd>
+            <h1>width:100%;height:100%;</h1>
+            <p>布局技巧:<br />
+            <em>要想宽，高，和父元素一样，必须父元素明确设置了宽，高,这种不做演示</em>
+            </p>
+            <h1>还有一种就是通过absolute或者fixed实现，四个方向都设置，</h1>
+            <p>布局技巧:<br />
+            <em>1 和上一种方法的区别是可以改变相对的父元素，可以相对于祖先元素进行100设置</em>
+            <em>2 还有就是祖先元素不用设置宽，高也可以</em>
+            </p>
+            <code>
+                <div style="width:200px;height:200px;border:1px solid red; position:relative;">
+                    <div>
+                        <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:grey;"></div>
+                    </div>
+                </div>
+            </code>
+            <code>
+                <div style="width:200px;border:1px solid red; position:relative;padding-left:10px;">
+                    1<br />
+                    1<br />
+                    1<br />
+                    1<br />
+                    1<br />
+                    1<br />
+                    1<br />
+                    1<br />
+                    <div>
+                        <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:grey;"></div>
+                    </div>
+                </div>
+            </code>
+        </dd>
+    </dl>
+</div>

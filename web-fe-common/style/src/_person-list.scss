@@ -1,0 +1,116 @@
+.person-list{
+    .person-item{
+        height: 27px;
+        cursor: pointer;
+        margin:5px 0;
+        img{
+            width:22px;
+            height: 22px;
+            border-radius:11px;
+            vertical-align: middle;
+            margin-right:7px;
+        }
+    }
+}
+.choosed-person-list-wrap{
+    border:1px solid $commonBorderColor;
+    color:#333;
+    .choosed-person-list{
+        padding:0 20px 0 10px;
+        height: 32px;
+        line-height: 32px;
+        white-space: no-wrap;
+        overflow:hidden;
+        position:relative;
+        .choosed-person-item{
+            
+            cursor: pointer;
+            .del-icon{
+
+            }
+        }
+        .the-trace-person{
+            position:absolute;
+            top:50%;
+            right:14px;
+            border:1px solid $commonBorderColor;
+            margin-top:-9px;
+            cursor: pointer;
+            padding:0 5px;
+            line-height: 20px;
+            background: #f5f5f5;
+            .mid-icon{
+                margin-right:3px;
+            }
+        }
+    }
+    &.open{
+        .choosed-person-list{
+            height: auto;
+            padding-bottom:2px;
+            padding-top:7px;
+            line-height: normal;
+            .choosed-person-item{
+                float:left;
+                height: 20px;
+                white-space: nowrap;
+                line-height: 20px;
+                background: #f5f5f5;
+                padding:0 5px;
+                margin:0 4px 5px 0;
+                border:1px solid $commonBorderColor;
+                .del-icon{
+                    vertical-align: middle\9;
+                    *vertical-align: middle;
+                    font-size:0;
+                    display: inline-block;
+                    margin-left:8px;
+                    @include icon-cross-del;
+                }
+                &:hover{
+                    border:1px solid $blueColor;
+                    .del-icon{
+                        @include icon-cross-del-deepcolor;
+                    }
+                }
+            }
+            .the-trace-person{
+                display: none;
+            }
+        }
+        
+    }
+    &.disabled{
+        color:#919699;
+        background:#f0f0f0;
+    }
+}
+.person-select-list{
+    width:438px;
+    box-shadow:$boxShadow;
+    border:1px solid $commonBorderColor;
+    .select-item{
+        height: 40px;
+        img{
+            width:30px;
+            height: 30px;
+            border-radius:30px;
+        }
+        .item1{
+            margin-left: 11px;
+        }
+        .item2{
+            margin-left: 9px;
+        }
+        .item3{
+            margin-left: 90px;
+        }
+        .item4{
+            margin-left: 6px;
+        }
+        &:hover{
+            background:#f0f0f0;
+            cursor: pointer;
+        }
+    }
+}

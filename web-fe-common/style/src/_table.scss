@@ -1,0 +1,110 @@
+.table-list{
+    width:100%;
+    border-collapse: collapse;
+    border-spacing:0;
+    table-layout: fixed;
+    td,th{
+        height: 39px;
+        border-top:1px solid $commonBorderColor;
+        border-bottom:1px solid $commonBorderColor;
+    }
+    thead{
+        tr{
+            background: #fafafa;
+        }
+        th{
+            text-align: left;
+            font-weight: normal;
+            color:#656666;
+            padding-left: 30px;
+            &+th{
+                padding-left:0px;
+            }
+            &+th+th{
+                padding-left:0px;
+            }
+            &+th+th+th{
+                padding-left:0px;
+            }
+            &+th+th+th+th{
+                padding-left:0px;
+            }
+            &+th+th+th+th+th{
+                padding-left:0px;
+            }
+            &+th+th+th+th+th+th{
+                padding-left:0px;
+            }
+            &+th+th+th+th+th+th+th{
+                padding-left:0px;
+            }
+            &+th+th+th+th+th+th+th+th{
+                padding-left:0px;
+            }
+            &+th+th+th+th+th+th+th+th+th{
+                padding-left:0px;
+            }
+            &+th+th+th+th+th+th+th+th+th+th{
+                padding-left:0px;
+            }
+        }
+    }
+    &.h40{
+        tbody{
+            td,th{
+                height: 40px;
+            }
+        }
+    }
+    &.h32{
+        tbody{
+            td,th{
+                height: 32px;
+            }
+        }
+    }
+    tbody{
+        td,th{
+            height: 55px;
+        }
+        td{
+            padding-left: 30px;
+            &+td{
+                padding-left:0px;
+            }
+            &+td+td{
+                padding-left:0px;
+            }
+            &+td+td+td{
+                padding-left:0px;
+            }
+            &+td+td+td+td{
+                padding-left:0px;
+            }
+            &+td+td+td+td+td{
+                padding-left:0px;
+            }
+            &+td+td+td+td+td+td{
+                padding-left:0px;
+            }
+            &+td+td+td+td+td+td+td{
+                padding-left:0px;
+            }
+            &+td+td+td+td+td+td+td+td{
+                padding-left:0px;
+            }
+            &+td+td+td+td+td+td+td+td+td{
+                padding-left:0px;
+            }
+            &+td+td+td+td+td+td+td+td+td+td{
+                padding-left:0px;
+            }
+        }
+        tr{
+            &:hover{
+                background:#f5f5f5;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,165 @@
+.datepicker {
+    vertical-align: middle;
+    line-height: 32px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+.input-group {
+    display: inline-block;
+    height: 34px;
+    vertical-align: top;
+    -webkit-transition: border-color ease-in-out 0.15s;
+    -moz-transition: border-color ease-in-out 0.15s;
+    -ms-transition: border-color ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s;
+}
+
+.input-group .input-title {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #f5f5f5;
+    border-color: #d9d9d9 -moz-use-text-color #d9d9d9 #d9d9d9;
+    border-image: none;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    color: #656666;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    transition: border-color 0.15s ease-in-out 0s;
+    width: 48px;
+}
+.input-group .text-input-wrap {
+    display: block;
+    overflow: hidden;
+}
+
+.datepicker-wrap {
+  width: 230px;
+  background-color: #fff;
+  line-height: 100%;
+  /*padding: 16px 20px 0 20px;*/
+  -webkit-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid #cccccc; }
+  .datepicker-wrap .picker-header {
+    position: relative;
+    margin-top: 16px;
+    height: 20px;
+    line-height: 20px; }
+    .datepicker-wrap .picker-header .picker-left {
+      position: absolute;
+      left: 23px;
+      top: 0;
+      cursor: pointer; }
+    .datepicker-wrap .picker-header .picker-now {
+      color: #303233;
+      font-size: 14px;
+      cursor: pointer;
+      text-align: center;
+      height: 20px;
+      position: relative;
+      top: -1px; }
+    .datepicker-wrap .picker-header .picker-right {
+      position: absolute;
+      right: 33px;
+      top: 0;
+      cursor: pointer; }
+  .datepicker-wrap .picker-content {
+    overflow-x: hidden;
+    font-size: 12px;
+    width: 100%; }
+    .datepicker-wrap .picker-content .week-content {
+      margin-top: 6px;
+      width: 120%; }
+      .datepicker-wrap .picker-content .week-content:after, .datepicker-wrap .picker-content .week-content:before {
+        content: "\200B";
+        display: block;
+        height: 0;
+        line-height: 0;
+        clear: both; }
+      .datepicker-wrap .picker-content .week-content {
+        *zoom: 1; }
+      .datepicker-wrap .picker-content .week-content .week-item {
+        float: left;
+        width: 27px;
+        height: 27px;
+        line-height: 27px;
+        text-align: center; }
+    .datepicker-wrap .picker-content .date-content {
+      margin-top: 2px;
+      margin-bottom: 16px;
+       }
+     .datepicker-wrap .picker-content .table-div {
+        margin-bottom: 0;
+     }  
+    .datepicker-wrap .picker-content .table-div table {
+        width: 190px;
+        margin-left: 20px; 
+    }  
+    .datepicker-wrap .picker-content .date-content .footbtns span{
+        display: inline-block;
+        *zoom:1;
+        width: 50%;
+        border: 1px solid #e0e0e0;
+        border-top: 2px solid #e0e0e0;
+        line-height: 36px;
+        cursor: pointer;
+        margin-left: -1px;
+        margin-right: -1px;
+        text-align: center;
+       }
+
+    .datepicker-wrap .picker-content .date-content .footbtns span:hover {
+        border-top-color: #2299ee;
+        color: #2299ee;
+    }
+      .datepicker-wrap .picker-content .date-content:after, .datepicker-wrap .picker-content .date-content:before {
+        content: "\200B";
+        display: block;
+        height: 0;
+        line-height: 0;
+        clear: both; }
+      .datepicker-wrap .picker-content .date-content {
+        *zoom: 1; }
+      .datepicker-wrap .picker-content .date-content .day-item {
+        float: left;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 25px;
+        border: 1px solid transparent;
+        line-height: 25px; }
+        .datepicker-wrap .picker-content .date-content .day-item.focus {
+          background: #2299ee;
+          border: 1px solid #2299ee;
+          color: #fff; }
+        .datepicker-wrap .picker-content .date-content .day-item.mark, .datepicker-wrap .picker-content .date-content .day-item:hover {
+          border: 1px solid #2299ee; }
+      .datepicker-wrap .picker-content .date-content .month-item, .datepicker-wrap .picker-content .date-content .year-item {
+        float: left;
+        width: 39px;
+        height: 39px;
+        text-align: center;
+        line-height: 39px;
+        border-radius: 39px;
+        margin: 6px 4px 4px 8px;
+        cursor: pointer;
+        border: 1px solid transparent; }
+        .datepicker-wrap .picker-content .date-content .month-item.focus, .datepicker-wrap .picker-content .date-content .year-item.focus {
+          background: #2299ee;
+          border: 1px solid #2299ee;
+          color: #fff; }
+        .datepicker-wrap .picker-content .date-content .month-item.mark, .datepicker-wrap .picker-content .date-content .month-item:hover, .datepicker-wrap .picker-content .date-content .year-item.mark, .datepicker-wrap .picker-content .date-content .year-item:hover {
+          border: 1px solid #2299ee; }
+      .datepicker-wrap .picker-content .date-content .year-item {
+        margin: 6px 16px 4px 16px; }

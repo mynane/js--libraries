@@ -1,0 +1,147 @@
+@import "icon/_menu.scss";
+@import "icon/_arrow.scss";
+@import "icon/_app.scss";
+@import "icon/_modal.scss";
+@import "icon/_file.scss";
+@import "icon/_form.scss";
+i[class*='icon-']{
+    @include icon;
+    &.icon-loading{
+        @include image_set("img/loading","gif");
+    }
+}
+
+.icon-text {
+    cursor: pointer;
+}
+
+.icon-triangle-down {
+    @include icon-triangle-down;
+}
+
+.icon-triangle-left {
+    border-left: 4px solid #656666;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 0;
+    display: inline-block;
+    width: 0;
+    height: 0;
+}
+
+.icon-search-grey {
+    width:15px;
+    height:15px;
+    background:url(img/1x/icon-search-grey.png)!important;
+}
+
+.icon-search-white {
+    width:15px;
+    height:15px;
+    background:url(img/1x/icon-search-white.png)!important;
+}
+
+
+/*删除按钮*/
+
+.icon-del {
+    width:16px;
+    height:16px;
+    background:url(img/1x/icon-del.png)!important;
+}
+
+/*问号*/
+.icon-hasquestion {
+    width:14px;
+    height:14px;
+    background:url(img/1x/icon-hasquestion.png)!important;
+}
+
+
+/*刷新按钮*/
+
+.icon-refresh-grey {
+    width:14px;
+    height:14px;
+    background:url(img/1x/icon-refresh-grey.png)!important;
+}
+
+
+/*设置图标*/
+
+.icon-setup-grey {
+    width:16px;
+    height:16px;
+    background:url(img/1x/icon-setup-grey.png)!important;
+}
+
+
+/*添加按钮*/
+
+.icon-cross {
+    width:9px;
+    height:9px;
+    background:url(img/1x/icon-cross.png)!important;
+}
+
+.icon-link {
+    width:11px;
+    height:12px;
+    background:url(img/1x/icon-link.png)!important;
+}
+
+.icon-circle {
+    background:url(img/1x/icon-circle.png)!important;
+    width:10px;
+    height:10px;
+}
+
+/*叉号*/
+@mixin icon-cross-del{
+    width: 10px;
+    height: 10px;
+    background:url(img/1x/icon-cross-del.png)!important;
+}
+.icon-cross-del{
+    @include icon-cross-del;
+}
+@mixin icon-cross-del-deepcolor{
+    width: 10px;
+    height: 10px;
+    background:url(img/1x/icon-cross-del-deepcolor.png)!important;
+}
+.icon-cross-del-deepcolor{
+    @include icon-cross-del-deepcolor;
+}
+/*邮箱*/
+.icon-email-white{
+    width: 14px;
+    height: 11px;
+    background:url(img/1x/icon-email-white.png)!important;
+}
+.icon-email-grey{
+    width: 14px;
+    height: 11px;
+    background:url(img/1x/icon-email-grey.png)!important;
+}
+/*loading图标*/
+.icon-loading{
+    @include image_set("img/loading","gif");
+    width:36px;
+    height:10px;
+}
+/*台历图标*/
+
+.icon-calendar-allcalendar {
+    width: 16px;
+    height: 16px;
+    background:url(img/1x/icon-calendar-allcalendar.png)!important;
+}
+@mixin icon-calendar-allcalendar-hover{
+    width: 16px;
+    height: 16px;
+    background:url(img/1x/icon-calendar-allcalendar-hover.png)!important;
+}
+.icon-calendar-allcalendar-hover {
+    @include icon-calendar-allcalendar-hover;
+}

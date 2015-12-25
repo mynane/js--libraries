@@ -1,0 +1,24 @@
+.annex-wrap{
+    .annex-title{
+        color:#b5b5b5;
+        margin-bottom:10px;
+    }
+    .annex-list{
+        .annex-item{
+            .file-name-wrap{
+                .file-info{
+                    .file-name{
+                        line-height: normal;
+                    }
+                    .file-action{
+                        margin-top:1px;
+                        a{
+                            color:#2299ee;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

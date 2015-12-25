@@ -1,0 +1,105 @@
+
+/**
+ *     公共less方法
+ */
+@bodyBg: #edeff0;
+@whiteBg: #fff;
+@leftmenuBg: #f2f4f5;
+@leftmenuBorder: #c2c3c4;
+@font-size-base: 14px;
+@font-family-yahei: "Microsoft Yahei", "微软雅黑";
+@theme-color: #29e;
+@textColor: #494b4d;
+@gray-base: #000;
+@gray-darker: #333;
+@gray-dark: #666;
+@gray: #999;
+@linkColor: #616366;
+@linkHoverColor: #29e;
+@headerHeight: 62px;
+@border-radius: 2px;
+@2xIcons: "../css/img/taskIcon2x.png";
+@1xIcons: "../css/img/taskIcon1x.png";
+@light-border: 1px solid #ebeced;
+@userIcon: "../css/img/user.png";
+@tableBackground: transparent;
+@tableHeadBg: #f7f7f7;
+@tableBorderColor: #e5e5e5;
+@btnBackground: #f9f9f9;
+@btnBackgroundHover: #2d9beb;
+@btnBackgroundActive: #1079ca;
+@btnBorder: #d9dadb;
+@btnPrimaryBackground: #29e;
+@btnPrimaryBackgroundHover: #00a8ff;
+@btnPrimaryBackgroundActive: #07c;
+@btnOperateBg: #71767a;
+@btnOperateBgActive: #868a8e;
+@inputBorderTop: #bdbebf;
+@inputBorder: #d9dadb;
+@inputFont: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+.opacity(@opacity) {
+    opacity: @opacity/ 100;
+    filter: ~"alpha(opacity=@{opacity})" ;
+}
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow;
+    -moz-box-shadow: @shadow;
+    box-shadow: @shadow;
+}
+.transition(@transition) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+.size(@height, @width) {
+    width: @width;
+    height: @height;
+}
+.square(@size) {
+    .size(@size, @size);
+}
+.icon-com() {
+    background-image: url("@{icon1xPath}");
+    background-image: -webkit-image-set(url("@{icon1xPath}") 1x,url("@{icon2xPath}") 2x);
+    background-image: -moz-image-set(url("@{icon1xPath}") 1x,url("@{icon2xPath}") 2x);
+    background-image: -ms-image-set(url("@{icon1xPath}") 1x,url("@{icon2xPath}") 2x);
+    background-image: -o-image-set(url("@{icon1xPath}") 1x,url("@{icon2xPath}") 2x);
+    background-image: image-set(url("@{icon1xPath}") 1x,url("@{icon2xPath}") 2x);
+    background-repeat: no-repeat;
+    _background-image: url("@{icon1xPath}");
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.inline-block() {
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+}
+.clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+&:after {
+    clear: both;
+    }
+}
+.ie7-restore-left-whitespace() {
+  *margin-left: .3em;
+
+  &:first-child {
+    *margin-left: 0;
+  }
+}

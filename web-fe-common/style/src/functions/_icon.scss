@@ -1,0 +1,13 @@
+@mixin icon-triangle-down{
+    border-top:4px solid #656666;
+    border-left:4px solid transparent;
+    border-right:4px solid transparent;
+    border-bottom:0;
+    display: inline-block;
+    width:0;
+    height:0;
+}
+@mixin icon{
+    display:inline-block;
+    @include image_set("img/sprite/");
+}

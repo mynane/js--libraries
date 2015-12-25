@@ -1,0 +1,212 @@
+.modal-wrap{
+    padding:20px;
+    background: #fff;
+    border:1px solid #ccc\9;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+    position:fixed;
+    z-index:10000;
+    :root{
+        &{
+            border:0px solid #ccc\9;
+        }
+    }
+    /*弹出性带箭头的弹框*/
+    &.popover{
+        position:relative;
+        .arrow{
+            position:absolute;
+            width:0px;
+            height: 0px;    
+            .inner-arrow{
+                position:absolute;
+                width:0px;
+                height: 0px;
+            }
+        }
+        &.top>.arrow{
+            border-bottom:11px solid $commonBorderColor;
+            border-left:11px solid transparent;
+            border-right:11px solid transparent;
+            border-top:0;
+            top:-11px;
+            left:21%;
+            margin-left:-11px;
+            .inner-arrow{
+                border-bottom:11px solid #fff;
+                border-left:11px solid transparent;
+                border-right:11px solid transparent;
+                border-top:0;
+                top:1px;
+                top:2px\9;
+                :root{
+                    top:1px;
+                }
+                left: -11px;
+            }
+        }
+        &.left>.arrow{
+            border-right:11px solid $commonBorderColor;
+            border-top:11px solid transparent;
+            border-bottom:11px solid transparent;
+            border-left:0;
+            left:-11px;
+            top:21%;
+            margin-top:-11px;
+            .inner-arrow{
+                border-right:11px solid #fff;
+                border-top:11px solid transparent;
+                border-bottom:11px solid transparent;
+                border-left:0;
+                left:1px;
+                top: -11px;
+            }
+        }
+        &.bottom>.arrow{
+            border-top:11px solid $commonBorderColor;
+            border-left:11px solid transparent;
+            border-right:11px solid transparent;
+            border-bottom:0;
+            bottom:-11px;
+            left:21%;
+            margin-left:-11px;
+            .inner-arrow{
+                border-top:11px solid #fff;
+                border-left:11px solid transparent;
+                border-right:11px solid transparent;
+                border-bottom:0;
+                bottom:1px;
+                left: -11px;
+            }
+        }
+        &.right>.arrow{
+            border-left:11px solid $commonBorderColor;
+            border-top:11px solid transparent;
+            border-bottom:11px solid transparent;
+            border-right:0;
+            right:-11px;
+            top:21%;
+            margin-top:-11px;
+            .inner-arrow{
+                border-left:11px solid #fff;
+                border-top:11px solid transparent;
+                border-bottom:11px solid transparent;
+                border-right:0;
+                right:1px;
+                top: -11px;
+            }
+        }
+    }
+    .modal-title{
+        position:relative;
+        .title{
+            height: 15px;
+            line-height: 15px;
+            *line-height:17px;
+            margin:0;
+            padding:0;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .close{
+            height: 15px;
+            line-height: 15px;
+            position:absolute;
+            top:-2px;
+            right:0px;
+            cursor: pointer;
+            font-size: 21px;
+            color:#969899;
+        }
+        .right-title{
+            height: 15px;
+            position:absolute;
+            right:0px;
+            top:0;
+        }
+    }
+    .modal-body{
+        &.tip{
+           @include modal-body-common;
+
+        }
+        &.tip-with-btn{
+            width: 460px;
+            height: 95px;
+            .tip-wrap{
+                padding:18px 0 0 10px;
+                .tip-icon{
+
+                }
+                .tip-title{
+                    margin-left:12px;
+                    h3{
+                        font-size:18px;
+                        margin:0;
+                        font-weight: normal;
+                    }
+                    .tip-detail{
+                        margin-top:7px;
+                        color:#979899;
+                        font-size:14px;
+                    }
+                }
+            }
+        }
+        &.info-list{
+            width:460px;
+            margin-bottom:29px;
+            .info-title{
+                font-size:18px;
+                margin:15px 0 8px 10px;
+            }
+            .form-list{
+                .form-item{
+                    margin-bottom:10px;
+                    .item-title{
+                        width:55px;
+                        margin-right:8px;
+                    }
+                    .item-content{
+                        color:#323333;
+                        .person-content{
+                            width: 391px; 
+                            line-height:22px;
+                            margin-top:-3px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    .modal-footer{
+        text-align: right;
+        .confirm{
+            margin-left:8px;
+        }
+    }
+    &.async-tip{
+        padding:17px 32px;
+        .modal-body{
+            .info{
+                font-size:14px;
+                color:#333333;
+            }
+        }
+        &.loading{
+             padding: 17px 23px;
+            .modal-body{
+                .loading-wrap{
+                    .loading-icon{
+                        display:inline-block;
+                        @include image_set("img/loading","gif");
+                        width:36px;
+                        height: 10px;
+                        margin-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

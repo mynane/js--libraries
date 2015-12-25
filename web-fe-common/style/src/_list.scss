@@ -1,0 +1,38 @@
+@import "_table.scss";
+.file-list1{
+    color:#666;
+}
+.file-list2{
+    td.first{
+        color:#333;
+    }
+    td.action{
+        a{
+            visibility: hidden;
+            margin-right: 12px;
+            color:$blueColor;
+            cursor: pointer;
+        }
+    }
+    tr:hover{
+        td.action{
+           a{
+                visibility: visible;
+           } 
+        }
+    }
+}
+@media screen and (max-height: 600px) { 
+    .file-list2 tbody{
+        td,th{
+            height:40px;
+        }
+    }
+}
+@media screen and (max-height: 300px) { 
+    .file-list2 tbody{
+        td,th{
+            height:32px;
+        }
+    }
+}

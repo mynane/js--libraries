@@ -1,0 +1,35 @@
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='tel'],
+input[type='number']{
+    width:$inputWidth;
+    height: $inputHeight;
+    line-height: $inputHeight;
+    padding:0;
+    margin:0;
+    outline: none;
+    border:0;
+    text-indent: 10px;
+}
+.text-input-wrap{
+    display: inline-block;
+    border:$inputBorderWidth solid $inputBorderColor;
+    transition: border-color ease-in-out .15s,border-shadow ease-in-out .15s;
+    &.text-input-wrap-hover,&:hover{
+        border-color:$inputBorderHoverColor;
+        input[type='text'],
+        input[type='password'],
+        input[type='email'],
+        input[type='tel'],
+        input[type='number']{
+            box-shadow:1px 1px 3px 0px rgba(0, 0, 0, 0.2) inset;
+        }
+    }
+    &.focus{
+        border-color:$inputBorderFocusColor;
+    }
+}
+.text-input-wrap.error{
+    border-color:$inputBorderErrorColor;
+}

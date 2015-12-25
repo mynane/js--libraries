@@ -1,0 +1,92 @@
+#alert-tip-wrap{
+    position:fixed;
+    width:410px;
+    max-width: 100%;
+    top:53px;
+    left:50%;
+    margin-left:-204px;
+    text-align: center;
+    z-index: 92768;
+    .async-tip-wrap{
+        transform-style:preserve-3d;
+    }
+}
+.async-tip-content-wrap{
+    text-align: left;
+    display: inline-block;
+    padding-bottom:10px;
+    .async-tip-content{
+        padding:20px;
+        background: #fff;
+        border:1px solid #ccc\9;
+        :root{
+            &{
+                border:0px solid #ccc\9;
+            }
+        }
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+        .tip-wrap{
+            position:relative;
+            min-width: 368px;
+            .close{
+                height: 15px;
+                line-height: 15px;
+                position:absolute;
+                top:-2px;
+                right:0px;
+                cursor: pointer;
+                font-size: 21px;
+                color:#969899;
+            }
+            .tip-icon{
+                margin: 2px 0 0 9px;
+            }
+            .tip-title{
+                margin: 0 0 0 18px;
+                h3{
+                    margin:0;
+                    font-size: 18px;
+                    color:#2e3133;
+                    font-weight: normal;
+                }
+                .tip-detail{
+                    margin-top: 5px;
+                    font-size: 12px;
+                    a{
+                        color:#2299ee;
+                    }
+                }
+            }
+        }
+        &.singleline{
+            padding: 17px 23px;
+            .singleline-wrap{
+                .singleline-icon{
+                    margin-right:10px;
+                    &.loading{
+                        margin-right: 3px;
+                    }
+                }
+                .singleline-text{
+                    font-size:14px;
+                    color:#333333;
+                }
+            }
+            
+        }
+    }
+}
+@keyframes slideup{
+    0%{
+       opacity: 1;
+       height:100px;
+    }
+    50%{
+        opacity: 0;
+        height:100px;
+    }
+    100%{
+        opacity: 0;
+        height:0px;
+    }
+}

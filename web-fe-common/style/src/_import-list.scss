@@ -1,0 +1,18 @@
+.import-list{
+    border-top:1px solid $commonBorderColor;
+    .import-item{
+        margin-left: 9px;
+        height: 36px;
+        border-bottom:1px solid $commonBorderColor;
+        color:#666666;
+        .col1{
+            width:18px;
+        }
+        .col2{
+            margin-left:8px;
+        }
+        .col3{
+            margin-left:12px;
+        }
+    }
+}

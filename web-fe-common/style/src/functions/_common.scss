@@ -1,0 +1,48 @@
+@mixin image_set($url,$suffix:"png"){
+    background-image:url(#{$url}1x.#{$suffix});
+    background-image: -webkit-image-set(url(#{$url}1x.#{$suffix}) 1x,url(#{$url}2x.#{$suffix}) 2x);
+    background-image: -moz-image-set(url(#{$url}1x.#{$suffix}) 1x,url(#{$url}2x.#{$suffix}) 2x);
+    background-image: -ms-image-set(url(#{$url}1x.#{$suffix}) 1x,url(#{$url}2x.#{$suffix}) 2x);
+    background-image: -o-image-set(url(#{$url}1x.#{$suffix}) 1x,url(#{$url}2x.#{$suffix}) 2x);
+    background-image: image-set(url(#{$url}1x.#{$suffix}) 1x,url(#{$url}2x.#{$suffix}) 2x);
+    background-repeat: no-repeat;
+    _background-image: url(#{$url}1x.#{$suffix});
+}
+
+@mixin children-mid{
+    &:before{
+        display:inline-block;
+        content:" ";
+        width:0;
+        height:100%;
+        vertical-align:middle;
+    }
+}
+
+@mixin clearfix{
+    &:after, &:before {
+        content: "\200B";
+        display: block;
+        height: 0;
+        line-height: 0;
+        clear: both;
+    }
+    & {
+        *zoom: 1;
+    }
+}
+
+@mixin before($neirong){
+    *behavior: expression(ie7insertba(this,'before','#{$neirong}'));
+    &:before,& .ie7insertbefore{
+        @content;
+        content:"#{$neirong}";
+    }
+}
+@mixin after($neirong){
+    *behavior: expression(ie7insertba(this,'after','#{$neirong}'));
+    &:after,& .ie7insertafter{
+        @content;
+        content:"#{$neirong}";
+    }
+}

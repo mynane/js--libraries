@@ -1,0 +1,344 @@
+@import (less) "../../_ROOT/common.less";
+@ecuiIcons: "../../css/img/ecui.png";
+.ui-hide {
+    display: none !important;
+}
+.ui-valid {
+    position: absolute !important;
+    overflow: scroll !important;
+    visibility: hidden !important;
+    top: -90px !important;
+    left: -90px !important;
+    width: 80px !important;
+    height: 80px !important;
+    border: 1px solid !important;
+
+    div {
+        position: absolute !important;
+        top: 0 !important;
+        height: 90px !important;
+    }
+}
+.ui-mask {
+    position: absolute !important;
+    background-color: #000 !important;
+}
+.ui-item {
+    overflow: hidden !important;
+}
+.ui-input {
+    .inline-block();
+    overflow: hidden !important;
+
+    input, textarea {
+        border: 0 !important;
+        padding: 0 !important;
+    }
+}
+.ui-select {
+    .ui-select-text {
+        overflow: hidden !important;
+    }
+}
+.ui-select-options {
+    position: absolute !important;
+    z-index: 65535 !important;
+    overflow: auto !important;
+
+    .ui-select-item {
+        display: block !important;
+    }
+}
+.ui-dialog {
+    .ui-dialog-close {
+        position: absolute !important;
+    }
+
+    .ui-dialog-body {
+        position: relative !important;
+    }
+}
+.ui-monthview {
+    table {
+        border: 0 !important;
+        border-collapse: collapse !important;
+        border-spacing: 0 !important;
+    }
+}
+.ui-progress {
+    position: relative !important;
+    padding: 0 !important;
+
+    .ui-progress-text, .ui-progress-mask {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+.ui-retina {
+    overflow: hidden !important;
+    position: relative !important;
+    background: none !important;
+
+    img {
+        position: absolute !important;
+    }
+}
+#ECUI_LOCATOR {
+    position: absolute;
+    visibility: hidden;
+}
+
+/**
+ * 基础按钮样式
+ */
+.ui-button {
+    .inline-block();
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #2c5a5a;
+    color: #fff;
+}
+/**
+ *     checkbox
+ */
+.ui-checkbox {
+    width: 14px;
+    height: 14px;
+    overflow: hidden;
+    margin: 0 3px;
+    background: url(@ecuiIcons) 0 0 no-repeat;
+    vertical-align: middle;
+    .inline-block();
+}
+.ui-checkbox-hover {
+    background-position: -17px 0;
+}
+.ui-checkbox-checked {
+    background-position: -34px 0;
+}
+.ui-checkbox-checked-hover {
+    background-position: -51px 0;
+}
+.ui-checkbox-checked-disabled {
+    background-position: -85px 0;
+}
+.ui-checkbox-disabled {
+    background-position: -68px 0;
+}
+.ui-checkbox-part {
+    background-position: -102px 0;
+}
+.ui-checkbox-part-hover {
+    background-position: -51px 0;
+}
+
+/**
+ *     radio
+ */
+.ui-radio {
+    .inline-block();
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    margin: 0;
+    background: url(@ecuiIcons) 0 -18px no-repeat;
+    vertical-align: middle;
+}
+.ui-radio-hover {
+    background-position: -17px -18px;
+}
+.ui-radio-disabled {
+    background-position: -68px -18px;
+}
+.ui-radio-checked {
+    background-position: -34px -18px;
+}
+.ui-radio-checked-hover {
+    background-position: -51px -18px;
+}
+.ui-radio-checked-disabled {
+    background-position: -85px -18px;
+}
+
+/**
+ *     Select
+ */
+.ui-select {
+    .inline-block();
+    height: 20px;
+    background: #FFF;
+    width: 100px;
+    border: 1px solid #bbb;
+    .ui-select-text {
+        padding-left: 4px;
+        line-height: 20px;
+    }
+}
+.ui-select-hover {
+    border-color: #888;
+}
+.ui-select-options {
+    border: 1px solid #888;
+    background: #fff;
+    .ui-select-item {
+        padding-left: 4px;
+        cursor: default;
+        line-height: 20px;
+    }
+    .ui-select-item-hover, .ui-select-item-focus {
+        background: #ddd;
+    }
+}
+
+/**
+ *     TAB
+ */
+.ui-tab {
+    border: 1px solid #d9dadb;
+    .ui-tab-item {
+        padding: 4px 10px;
+    }
+    .ui-tab-title {
+        height: 32px;
+        line-height: 32px;
+        background-color: #f0e4e4;
+    }
+}
+
+.ui-tab-title {
+    label {
+        color: #666;
+        padding: 6px 20px;
+        cursor: pointer;
+    }
+    .ui-tab-item-selected {
+        color: #333;
+        border-bottom: 0;
+    }
+}
+.ui-tab-item-container {
+    background: #fff;
+    padding: 10px;
+    color: #282828;
+    min-height: 100px;
+    .ui-tab {
+        border: 1px solid #ccc;
+    }
+}
+/**
+ *     Dialog
+ */
+.ui-dialog {
+    background: #fff;
+    position: absolute;
+    font-size: 12px;
+    z-index: 200;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    .ui-dialog-head {
+        background: #394459;
+        height: 28px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .ui-dialog-title {
+        cursor: move;
+        padding: 10px 0 6px 12px;
+        line-height: 24px;
+        font-weight: bold;
+        display: block;
+        color: #656666;
+        font-size: 14px !important;
+    }
+    .ui-dialog-body {
+        padding: 10px 8px;
+    }
+    .ui-dialog-close {
+        cursor: pointer;
+        right: 20px;
+        top: 10px;
+        background-image: url(@ecuiIcons);
+        background-position: -86px -156px;
+        height: 10px;
+        width: 10px;
+    }
+}
+
+/**
+ *     messagebox
+ */
+.ui-messagebox {
+    height: 200px;
+    width: 300px;
+    border: 1px solid #ccc;
+    .ui-dialog-title {
+        height: 18px;
+    }
+    .ui-dialog-body {
+        height: 120px;
+    }
+    .ui-messagebox-text {
+        padding: 10px;
+        height: 64px;
+    }
+    .ui-messagebox-bottom {
+        border-top: 1px solid #ddd;
+        padding: 5px;
+        text-align: right;
+        vertical-align: bottom;
+        .ui-button {
+            background: #fff;
+            color: #333;
+            text-shadow: none;
+            border: 1px solid #ccc;
+        }
+    }
+}
+
+/** 
+ *   ui-messagebox-info 
+ */
+.ui-messagebox-info {
+    background: lightyellow;
+    .ui-form-title {
+        display: none;
+    }
+    .ui-messagebox-bottom {
+        display: none;
+    }
+}
+
+/**
+ *     日历
+ */
+.ui-monthview {
+    text-align: center;
+    table {
+        margin: 0 auto;
+        font-size: 12px;
+    }
+    .ui-monthview-title {
+        color: #4a4c4e;
+    }
+    .ui-monthview-date {
+        color: #333;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    .ui-monthview-date-selected {
+        color: #fff;
+        background-color: #29e;
+        border-radius: 20px;
+    }
+    .ui-monthview-extra {
+        color: #a4acb6;
+        cursor: auto;
+    }
+}
+

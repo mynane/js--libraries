@@ -1,0 +1,478 @@
+<!-- target:form -->
+<div ui="type:demo" class="demo-wrap">
+    <dl class="demo_title">
+        <dt>
+            表单组件 - input text样式
+        </dt>
+        <dd>
+            <h1>简单样式</h1>
+            <code>
+                <div class="text-input-wrap w428" ui="type:input-control;resizable:false;hidden;">
+                    <input type="text" />
+                </div>
+            </code>
+            <code>
+                <input type="text" class="text-input-wrap w428" ui="type:input-control;resizable:false;" />
+            </code>
+            <code>
+                <input type="text" ui="type:input-control" class="text-input-wrap w428" />
+            </code>
+            <code>
+                <div class="text-input-wrap text-input-wrap-hover w428">
+                    <input type="text" />
+                </div>
+            </code>
+            <code>
+                <div class="text-input-wrap focus w428">
+                    <input type="text"  />
+                </div>
+            </code>
+            <code>
+                <div class="text-input-wrap error w428">
+                    <input type="text"  />
+                </div>
+            </code>
+            <h1>textarea 样式</h1>
+            <code>
+                <div class="textarea-wrap w428">
+                    <div class="textarea-wrap-helper">
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </code>
+            <code>
+               <div class="textarea-wrap focus w428">
+                    <div class="textarea-wrap-helper">
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </code>
+        </dd>
+        <dd>
+            <h1>带标题的input</h1>
+            <code>
+                <div class="input-group w8n" ui="type:input-control">
+                    <div class="input-text left">标题</div>
+                    <div class="text-input-wrap">
+                        <input type="text" />
+                    </div>
+                </div>
+            </code>
+        </dd>
+        <dd>
+            <h1>搜索按钮input</h1>
+            <code>
+                <div class="input-group w8n">
+                    <div class="input-text right">标题</div>
+                    <div class="text-input-wrap">
+                        <input type="text" />
+                    </div>
+                </div>
+            </code>
+        </dd>
+         <dd>
+            <h1>带搜索按钮的input</h1>
+            <code>
+                <div class="input-group w8n" ui="type:input-control">
+                    <div class="input-right-label input-search vertical-middle"><i class="mid-icon icon-search-grey"></i></div>
+                    <div class="text-input-wrap">
+                        <input type="text" />
+                    </div>
+                </div>
+            </code>
+        </dd>
+        <dd>
+            <h1>选择人之后的类input框-</h1>
+            <code>
+                <div class="choosed-person-list-wrap disabled w428">
+                    <div class="choosed-person-list layout-float-wrap">
+                        <span class="choosed-person-item" >Allstar(欧阳先伟)</span>
+                        <span class="choosed-person-item">Ricky(李雪)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Vince(文荣)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Henry(霍文旌)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Catherine(王智华)<span class="del-icon">,</span></span>
+                        <span class="the-trace-person vertical-middle" onclick="this.parentNode.className='choosed-person-list closed layout-float-wrap open'"><i class="icon-cross mid-icon"></i><span class="mid-text">另外16人</span></span>
+                    </div>
+                </div>
+            </code>
+            <code>
+                <div class="choosed-person-list-wrap w428">
+                    <div class="choosed-person-list layout-float-wrap">
+                        <span class="choosed-person-item" >Allstar(欧阳先伟)</span>
+                        <span class="choosed-person-item">Ricky(李雪)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Vince(文荣)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Henry(霍文旌)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Catherine(王智华)<span class="del-icon">,</span></span>
+                        <span class="the-trace-person vertical-middle" onclick="this.parentNode.parentNode.className='choosed-person-list-wrap w428 open'"><i class="icon-cross mid-icon"></i><span class="mid-text">另外16人</span></span>
+                    </div>
+                </div>
+            </code>
+            <code>
+                <div class="choosed-person-list-wrap open w428">
+                    <div class="choosed-person-list layout-float-wrap">
+                        <span class="choosed-person-item">Allstar(欧阳先伟)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Ricky(李雪)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Vince(文荣)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Henry(霍文旌)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Catherine(王智华)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Allstar(欧阳先伟)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Ricky(李雪)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Vince(文荣)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Henry(霍文旌)<span class="del-icon">,</span></span>
+                        <span class="choosed-person-item">Catherine(王智华)<span class="del-icon">,</span></span>
+                    </div>
+                </div>
+            </code>
+        </dd>
+    </dl>
+    <dl class="demo_title">
+        <dt>
+            表单组件 - 单选，复选框样式
+        </dt>
+        <code>
+            <label class="label-wrap" ui="type:checkbox">
+                <div class="checkbox-wrap"><input type="checkbox" /></div>是否接受
+            </label>
+            <label class="label-wrap" ui="type:checkbox">
+                <div class="checkbox-wrap"><input type="checkbox" /></div>是否接受
+            </label>
+        </code>
+        <code>
+            <label class="label-wrap" ui="type:radio">
+                <div class="radio-wrap"><input type="radio" name="username" /></div>男
+            </label>
+            <label class="label-wrap" ui="type:radio">
+                <div class="radio-wrap"><input type="radio"  name="username" /></div>女
+            </label>
+        </code>
+    </dl>
+    <dl class="demo_title">
+        <dt>
+            表单组件 - 下拉框组件
+        </dt>
+        <dd>
+            <h1>下拉框组件</h1>
+            <code>
+                <div class="input-group w8n" ui="type:select;id:demoselect">
+                    <div class="input-right-label input-select vertical-middle"><i class="mid-icon icon-triangle-down"></i></div>
+                    <div class="text-input-wrap readonly">
+                        <span class="textlike">这里是标题</span>
+                    </div>
+                    <ul class="select-list w8n">
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历1</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历2</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历3</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历4</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历5</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历6</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历7</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历8</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历9</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="input-group w15n" ui="type:select">
+                    <div class="input-right-label input-select vertical-middle"><i class="mid-icon icon-triangle-down"></i></div>
+                    <div class="text-input-wrap readonly">
+                        <span class="textlike">这里是标题</span>
+                    </div>
+                    <ul class="select-list w8n">
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历1</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历2</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历3</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历4</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历5</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历6</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历7</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历8</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历9</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </code>
+        </dd>
+        <dd>
+            <h1>带标题,可以输入的select</h1>
+            <code>
+                <div class="input-group w8n">
+                    <div class="input-text left">标题</div>
+                    <div class="input-right-label input-select vertical-middle"><i class="mid-icon icon-triangle-down"></i></div>
+                    <div class="text-input-wrap">
+                        <input type="text" />
+                    </div>
+                </div>
+            </code>
+        </dd>
+        <dd>
+            <h1>带标题,不可以输入的select</h1>
+            <code>
+                <div class="input-group w8n" ui="type:select">
+                    <div class="input-text left">标题</div>
+                    <div class="input-right-label input-select vertical-middle"><i class="mid-icon icon-triangle-down"></i></div>
+                    <div class="text-input-wrap readonly">
+                        <span class="textlike"></span>
+                    </div>
+                    <ul class="select-list w8n">
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历1</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历2</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历3</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历4</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历5</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历6</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历7</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历8</a>
+                        </li>
+                        <li class="select-item">
+                            <a href="javascript:void(0)">培训台历9</a>
+                        </li>
+                    </ul>
+                </div>
+            </code>
+        </dd>
+        <dd>
+            <h1>下拉框人员的样式</h1>
+            <code>
+                <ul class="person-select-list">
+                    <li class="select-item vertical-middle">
+                        <img class="mid-icon item1" src="../style/dest/img//gengwei.gif" />
+                        <span class="mid-text item2">Smile(王佩) </span>
+                        <i class="mid-icon icon-email-grey item3"></i>
+                        <span class="mid-text item4">wangpei@jingoal.com</span>
+                    </li>
+                    <li class="select-item vertical-middle">
+                        <img class="mid-icon item1" src="../style/dest/img//xianwei.gif" />
+                        <span class="mid-text item2">Smile(王佩) </span>
+                        <i class="mid-icon icon-email-grey item3"></i>
+                        <span class="mid-text item4">wangpei@jingoal.com</span>
+                    </li>
+                    <li class="select-item vertical-middle">
+                        <img class="mid-icon item1" src="../style/dest/img//gengwei.gif" />
+                        <span class="mid-text item2">Smile(王佩) </span>
+                        <i class="mid-icon icon-email-grey item3"></i>
+                        <span class="mid-text item4">wangpei@jingoal.com</span>
+                    </li>
+                    <li class="select-item vertical-middle">
+                        <img class="mid-icon item1" src="../style/dest/img//xianwei.gif" />
+                        <span class="mid-text item2">Smile(王佩) </span>
+                        <i class="mid-icon icon-email-grey item3"></i>
+                        <span class="mid-text item4">wangpei@jingoal.com</span>
+                    </li>
+                    <li class="select-item vertical-middle">
+                        <img class="mid-icon item1" src="../style/dest/img//xianwei.gif" />
+                        <span class="mid-text item2">Smile(王佩) </span>
+                        <i class="mid-icon icon-email-grey item3"></i>
+                        <span class="mid-text item4">wangpei@jingoal.com</span>
+                    </li>
+                    <li class="select-item vertical-middle">
+                        <img class="mid-icon item1" src="../style/dest/img//gengwei.gif" />
+                        <span class="mid-text item2">Smile(王佩) </span>
+                        <i class="mid-icon icon-email-grey item3"></i>
+                        <span class="mid-text item4">wangpei@jingoal.com</span>
+                    </li>
+                    <li class="select-item vertical-middle">
+                        <img class="mid-icon item1" src="../style/dest/img//xianwei.gif" />
+                        <span class="mid-text item2">Smile(王佩) </span>
+                        <i class="mid-icon icon-email-grey item3"></i>
+                        <span class="mid-text item4">wangpei@jingoal.com</span>
+                    </li>
+                </ul>
+            </code>
+        </dd>
+    </dl>
+    <dl class="demo_title">
+        <dt>
+            表单组件 - 常见结构
+        </dt>
+        <dd>
+            <h1>常见的表单结构</h1>
+            <code>
+                <ul class="form-list">
+                    <li class="form-item layout-float-wrap">
+                        <label class="item-title layout-float-left">
+                            <span class="mid-text font-red">*</span> 联系方式 :
+                        </label>
+                        <div class="item-content layout-float-left">
+                            <div class="textarea-wrap w428">
+                                <div class="textarea-wrap-helper">
+                                    <textarea placeholder="欢迎提出你使用过程中遇到的疑问和问题，感谢你对今目标的支持"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="form-item">
+                        <label class="item-title">
+                            <span class="mid-text font-red">*</span> 反馈内容 :
+                        </label>
+                        <div class="item-content">
+                            <div class="text-input-wrap w428">
+                                <input type="text" placeholder="请留下你的联系方式" />
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </code>
+        </dd>
+    </dl>
+    <dl class="demo_title">
+        <dt>
+            表单组件 - 日历组件
+        </dt>
+        <dd>
+            <h1>日历</h1>
+            <code>
+                <div class="datepicker-wrap">
+                    <div class="picker-header">
+                        <span class="picker-left"><i class="icon-arrow-left"></i></span>
+                        <div class="picker-now">2015年5月</div>
+                        <span class="picker-right"><i class="icon-arrow-right"></i></span>
+                    </div>
+                    <div class="picker-content">
+                        <div class="week-content">
+                            <div class="week-item">一</div>
+                            <div class="week-item">二</div>
+                            <div class="week-item">三</div>
+                            <div class="week-item">四</div>
+                            <div class="week-item">五</div>
+                            <div class="week-item">六</div>
+                            <div class="week-item">日</div>
+                        </div>
+                        <div class="date-content">
+                            <div class="day-item">29</div>
+                            <div class="day-item">30</div>
+                            <div class="day-item">31</div>
+                            <div class="day-item">1</div>
+                            <div class="day-item">2</div>
+                            <div class="day-item">3</div>
+                            <div class="day-item">4</div>
+                            <div class="day-item">5</div>
+                            <div class="day-item">6</div>
+                            <div class="day-item">7</div>
+                            <div class="day-item">8</div>
+                            <div class="day-item">9</div>
+                            <div class="day-item">10</div>
+                            <div class="day-item">11</div>
+                            <div class="day-item">12</div>
+                            <div class="day-item">13</div>
+                            <div class="day-item">14</div>
+                            <div class="day-item mark">15</div>
+                            <div class="day-item focus">16</div>
+                            <div class="day-item">17</div>
+                            <div class="day-item">18</div>
+                            <div class="day-item">19</div>
+                            <div class="day-item">20</div>
+                            <div class="day-item">21</div>
+                            <div class="day-item">22</div>
+                            <div class="day-item">23</div>
+                            <div class="day-item">24</div>
+                            <div class="day-item">25</div>
+                            <div class="day-item">26</div>
+                            <div class="day-item">27</div>
+                            <div class="day-item">28</div>
+                            <div class="day-item">29</div>
+                            <div class="day-item">30</div>
+                            <div class="day-item">31</div>
+                            <div class="day-item">1</div>
+                        </div>
+                    </div>
+                </div>
+            </code>
+            <code>
+                <div class="datepicker-wrap">
+                    <div class="picker-header">
+                        <span class="picker-left"><i class="icon-arrow-left"></i></span>
+                        <div class="picker-now">2015年5月</div>
+                        <span class="picker-right"><i class="icon-arrow-right"></i></span>
+                    </div>
+                    <div class="picker-content">
+                        <div class="date-content">
+                            <div class="month-item">一月</div>
+                            <div class="month-item">二月</div>
+                            <div class="month-item">三月</div>
+                            <div class="month-item">四月</div>
+                            <div class="month-item">五月</div>
+                            <div class="month-item">六月</div>
+                            <div class="month-item">七月</div>
+                            <div class="month-item focus">八月</div>
+                            <div class="month-item">九月</div>
+                            <div class="month-item">十月</div>
+                            <div class="month-item">十一月</div>
+                            <div class="month-item">十二月</div>
+                        </div>
+                    </div>
+                </div>
+            </code>
+            <code>
+                <div class="datepicker-wrap">
+                    <div class="picker-header">
+                        <span class="picker-left"><i class="icon-arrow-left"></i></span>
+                        <div class="picker-now">2015年5月</div>
+                        <span class="picker-right"><i class="icon-arrow-right"></i></span>
+                    </div>
+                    <div class="picker-content">
+                        <div class="date-content">
+                            <div class="year-item">2007</div>
+                            <div class="year-item">2008</div>
+                            <div class="year-item focus">2009</div>
+                            <div class="year-item">2010</div>
+                            <div class="year-item">2011</div>
+                            <div class="year-item">2012</div>
+                            <div class="year-item">2013</div>
+                            <div class="year-item">2014</div>
+                            <div class="year-item">2015</div>
+                        </div>
+                    </div>
+                </div>
+            </code>
+        </dd>
+    </dl>
+</div>

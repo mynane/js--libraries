@@ -1,0 +1,77 @@
+.right-select-tree{
+    min-width: 200px;
+}
+.right-select-tree label{
+    display: block;
+    vertical-align: middle;
+    padding: 8px 8px 8px 34px;
+}
+.right-select-tree label span{
+    display: inline-block;
+    *display:inline;
+    *zoom:1;
+    width: 10px;
+    height: 10px;
+    margin-right: 12px;
+    vertical-align: middle;
+    background-image: url(tree.png);
+}
+.right-select-tree .dept-tree-expanded.tree-body{
+    padding-left: 12px;
+}
+.right-select-tree .dept-tree-expanded.tree-body span {
+    width: 16px;
+    height: 16px;
+    background-image: url(../../css/img/icon1x.png);
+}
+.right-select-tree .vm{
+    width: 1px;
+    height: 20px;
+    display: inline-block;
+    *display:inline;
+    *zoom:1;
+    vertical-align: middle;
+}
+.right-select-tree .dept-tree-expanded span{
+    height: 4px;
+    margin-right: 8px;
+}
+.right-select-tree .dept-tree-collapsed span{
+    width: 4px;
+    background-position: -12px -1px;
+}
+.right-select-tree .dept-tree-empty span{
+    background-image: none;
+}
+.right-select-tree .avatar{
+    display: inline-block;
+    *display:inline;
+    *zoom:1;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+.right-select-tree .dept-tree-leaf{
+    padding: 6px;
+}
+.right-select-tree .dept-tree-children label{
+    border-top: 1px solid #eaeaea;
+}
+.right-select-tree .dept-tree-children  .dept-tree-leaf{
+    padding-left: 34px;
+}
+.right-select-tree .dept-tree-children .dept-tree-children{
+    margin-left: 34px;
+}
+.right-select-tree .dept-tree-children .dept-tree-children label{
+    padding-left: 20px;
+}
+.right-select-tree .dept-tree-children .dept-tree-children .dept-tree-leaf{
+    padding-left: 16px;
+}
+.right-select-tree .dept-tree-children label.ui-treeview-focus{
+    background-color: #cde8fc;
+    color: #29e;
+}

@@ -1,0 +1,109 @@
+.page-list{
+    font-size:0px;
+    letter-spacing: -4px;
+    .page-btn-prev,.page-btn-next{
+        margin:0 2px;
+        width:77px;
+        height:$pageItemHeight;
+        line-height: $pageItemHeight;
+        border:1px solid #e8e9eb;
+        color:#333333;
+        display: inline-block;
+        text-align: center;
+        border-radius: 2px;
+        i{
+            vertical-align: middle;
+            margin-right: 4px;
+            margin-top: -2px;
+            margin-top: 0px\9;
+        }
+        vertical-align: middle;
+        font-size:12px;
+        letter-spacing: normal;
+        cursor: pointer;
+        &:hover,&.page-btn-hover{
+            color:$blueColor;
+            .icon-arrow-left{
+                background-position:-80px -20px;
+            }
+            .icon-arrow-right{
+                background-position:-99px -20px;
+            }
+        }
+        &.disable{
+            color:$disableColor;
+            .icon-arrow-left{
+                background-position:-80px 0;
+            }
+            .icon-arrow-right{
+                background-position:-59px 0;
+            }
+        }
+    }
+    .page-btn-next{
+        i{
+            margin-left:4px;
+        }
+    }
+    .page-ellipsis,.page-text{
+        height:$pageItemHeight;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 12px;
+        line-height: $pageItemHeight;
+        letter-spacing: normal;
+        margin:0 6px;
+        .page-position{
+            width:40px;
+            height:22px;
+            border:1px solid #e8e9eb;
+            line-height: 22px;
+            vertical-align: middle;
+        }
+        &.page-input{
+            margin:0 -1px;
+        }
+    }
+    .page-ellipsis{
+        line-height: 29px;
+        line-height: $pageItemHeight \9;
+    }
+    .page-btn{
+        font-size:12px;
+        letter-spacing: normal;
+        text-align: center;
+        height:24px;
+        width: 48px;
+        line-height: 24px;
+        background:#f5f5f5;
+        margin-left: 2px;
+        &:hover{
+            background:#2299ee;
+            color:#ffffff;
+        }
+    }
+    .page-item{
+        cursor: pointer;
+        margin:0 3px;
+        color:#5a5a5a;
+        letter-spacing: normal;
+        font-size:12px;
+        display: inline-block;
+        width:$pageItemHeight;
+        height:$pageItemHeight;
+        line-height: $pageItemHeight;
+        text-align: center;
+        border:1px solid #e8e9eb;
+        vertical-align: middle;
+        border-radius: 2px;
+        &:hover,&.page-item-hover{
+            border:1px solid #2299ee;
+            color:$blueColor;
+        }
+        &:active,&.page-item-active{
+            background: #2299ee;
+            color:#fff;
+            border:1px solid #2299ee;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+/*按钮*/
+.btn{
+    @include button-reset();
+    color:#333333;
+    &.h26{
+        padding:6px 24px;
+    }
+    &.h28{
+        padding:7px 24px;
+    }
+    &.h32{
+        padding:9px 28px;
+    }
+    &.h36{
+        padding:11px 66px;
+    }
+    &.font-grey{
+        color:#656666;
+    }
+    &.disable{
+        opacity: .5;
+    }
+    &.bg-blue{
+        background:#2299ee;
+        filter:null;
+        color:#fff;
+        &:hover{
+            background:#00a8ff;
+        }
+    }
+}
+.btn-group{
+    font-size: 0;
+    letter-spacing: -4px;
+    .btn{
+        border-right:0;
+        border-left:1px solid #d7d8d9;
+        &.last-btn{
+            border-right:0;
+        }
+    }
+}
+
+.btn{
+    @include button-reset();
+    &.confirm{
+        background:#2299ee;
+        width:80px;
+        height:32px;
+        line-height: 32px;
+        color:#fff;
+    }
+    &.cancel{
+        width:78px;
+        height: 32px;
+        line-height: 32px;
+        background:#fff;
+        border:1px solid #d9d9d9;
+    }
+    &.link{
+        background:#fff;
+        width:80px;
+        height:32px;
+        line-height: 32px;
+    }
+    &.grey{
+        background:#d9d9d9;
+        width:80px;
+        height:32px;
+        line-height: 32px;
+        color:#656666;
+    }
+    &.refresh,&.setup{
+        width:69px;
+        height: 28px;
+        line-height: 28px;
+        color:#656666;
+        background:#fff;
+        text-align: left;
+        font-size:12px;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+        i{
+            margin-left:13px;
+            margin-right:6px;
+        }
+        &.setup{
+            i{
+                margin-right: 4px;
+            }
+        }
+    }
+}

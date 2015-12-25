@@ -1,0 +1,18 @@
+@mixin modal-body-common{
+    width:460px;
+    height: 260px;
+    text-align: center;
+    .icon-tip{
+        margin-top: 41px;
+    }
+    .title-tip{
+        margin-top: 19px;
+        font-size: 20px;
+        color:#2e3133;
+    }
+    .close-tip{
+        font-size: 12px;
+        margin-top: 11px;
+        color:#656666;
+    }
+}

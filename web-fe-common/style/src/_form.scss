@@ -1,0 +1,363 @@
+input,textarea{
+    &::-webkit-input-placeholder{
+        color:#979899;
+        font-size:12px;
+    }
+    &:-moz-placeholder{
+        color:#979899;
+        font-size:12px;
+    }
+    &::-moz-placeholder{
+        color:#979899;
+        font-size:12px;
+    }
+    &:-ms-input-placeholder {
+        color:#979899;
+        font-size:12px;
+    }
+}
+.text-input-wrap{
+    display: inline-block;
+    *height: $inputHeight;
+    *overflow:hidden;
+    border:$inputBorderWidth solid $inputBorderColor;
+    transition: border-color ease-in-out $inputTransitionTime;
+    vertical-align:top;
+    color:$inputColor;
+    input[type='text'],
+    input[type='password'],
+    input[type='email'],
+    input[type='tel'],
+    input[type='number'],
+    .textlike{
+        width:100%;
+        height:$inputHeight;
+        line-height: $inputHeight;
+        padding:0;
+        margin:0;
+        outline: none;
+        border:0;
+        text-indent: $inputIndent;
+        *display: block;
+        color:$inputColor;
+    }
+    .textlike{
+        display:block;
+        a{
+            color:$inputColor;
+            text-decoration: none;
+        }
+    }
+    &.text-input-wrap-hover,&:hover{
+        border-color:$inputBorderHoverColor;
+        input[type='text'],
+        input[type='password'],
+        input[type='email'],
+        input[type='tel'],
+        input[type='number']{
+            box-shadow:1px 1px 3px 0px rgba(0, 0, 0, 0.2) inset;
+        }
+    }
+    &.readonly{
+        border-color:$inputBorderColor;
+        input[type='text'],
+        input[type='password'],
+        input[type='email'],
+        input[type='tel'],
+        input[type='number']{
+            box-shadow:none;
+        }
+    }
+    &.focus{
+        border-color:$inputBorderFocusColor;
+    }
+}
+.textarea-wrap{
+    border:$inputBorderWidth solid $inputBorderColor;
+    display: inline-block;
+    vertical-align: top;
+    &.textarea-wrap-hover,&:hover{
+
+    }
+    .textarea-wrap-helper{
+        padding-right:20px;
+        height: 100%;
+    }
+    textarea{
+        display: block;
+        width:100%;
+        padding:10px;
+        margin:0;
+        border:0;
+        resize:none;
+        outline: none;
+    }
+    &.focus{
+        border-color:$inputBorderFocusColor;
+    }
+}
+.text-input-wrap.error{
+    border-color:$inputBorderErrorColor;
+}
+.input-group{
+    display:inline-block;
+    height:$inputGroupHeight;
+    @include clearfix;
+    vertical-align:top;
+    .input-text{
+        transition: border-color ease-in-out $inputTransitionTime;
+        float:left;
+        width:$inputTitleWidth;
+        color:$inputTitleColor;
+        background-color:$inputTitleBgColor;
+        height:$inputHeight;
+        line-height:$inputHeight;
+        text-align:center;
+        &.right{
+            border:1px solid $inputBorderColor;
+            border-left:0;
+            float:right;
+            cursor: pointer;
+        }
+        &.left{
+            border:1px solid $inputBorderColor;
+            border-right:0;
+        }
+    }
+    .text-input-wrap{
+        display:block;
+        overflow:hidden; 
+    }
+    &>.input-right-label{
+        transition: border-color ease-in-out $inputTransitionTime;
+        float:right;
+        width:25px;
+        background:#fff;
+        border:1px solid $inputBorderColor;
+        border-left:0;
+        height:$inputHeight;
+        position:relative;
+        & + .text-input-wrap{
+            border-right:0;
+            &:hover{
+                border-color:$inputBorderColor;
+                input[type='text'],
+                input[type='password'],
+                input[type='email'],
+                input[type='tel'],
+                input[type='number']{
+                    box-shadow:none;
+                }
+            }
+        }
+        &.input-select{
+            width:20px;
+            cursor:pointer;
+        }
+    }
+    transition: border-color ease-in-out $inputTransitionTime;
+    &:hover{
+        .input-text{
+            border-color:$inputBorderHoverColor;
+        }
+        &>.input-right-label{
+            border-color:$inputBorderHoverColor;
+            & + .text-input-wrap{
+                border-color:$inputBorderHoverColor;
+            }
+        }
+    }
+}
+.label-wrap,.label-wrap-checked{
+    display:inline-block;
+    height:16px;
+    line-height:16px;
+    font-size:14px;
+    color:$inputColor;
+    .checkbox-wrap,.radio-wrap{
+        @include icon;
+        display:inline-block;
+        vertical-align:sub;
+        *vertical-align:middle;
+        width:16px;
+        height:16px;
+        margin-right:6px;
+        &.radio-wrap{
+            width:15px;
+            height:15px;
+        }
+    }
+    .checkbox-wrap{
+        background:url("img/1x/icon-checkbox.png")!important;
+        input[type='checkbox']{
+            width:0;
+            height:0;
+            display:none;
+            margin:0;
+            padding:0;
+        }
+    }
+    &.label-wrap-checked{
+        .checkbox-wrap{
+            background:url("img/1x/icon-checkbox-checked.png")!important;
+        }
+        .radio-wrap{
+            background:url("img/1x/icon-radio-checked.png")!important;
+        }
+    }
+    .radio-wrap{
+        background:url("img/1x/icon-radio.png")!important;
+        input[type='radio']{
+            width:0;
+            height:0;
+            display:none;
+            margin:0;
+            padding:0;
+        }
+    }
+}
+/*
+select下拉框
+*/
+.select-list{
+    position: absolute;
+    background:#fff;
+    z-index: 65535;
+    border:1px solid $selectBorderColor;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.2);
+    .select-item{
+        height:$selectItemHeight;
+        line-height:$selectItemHeight;
+        a{
+            color:$selectItemColor;
+            text-decoration:none;
+            padding-left:$inputIndent;
+        }
+        &:hover{
+            cursor:pointer;
+            background:$selectItemHoverBg;
+        }
+    }
+}
+.form-list{
+    .form-item{
+        margin-bottom: 16px;
+        @include clearfix;
+        .item-title{
+            float:left;
+            height: 34px;
+            line-height: 34px;
+            margin-right: 4px;
+            color:#656666;
+            font-size:12px;
+            width:70px;
+            text-align: right;
+            &.w60{
+                width:60px;//四个字不要*号
+            }
+            &.w55{
+                width:55px;//三个字
+            }
+            &.right-text{
+                height: auto;
+                line-height:normal;
+            }
+        }
+        .item-content{
+            float: left;
+        }
+    }
+}
+.datepicker-wrap{
+    width:189px;
+    padding:16px 20px 0 20px;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    border:1px solid #cccccc;
+    .picker-header{
+        position:relative;
+        height: 20px;
+        line-height: 20px;
+        .picker-left{
+            position:absolute;
+            left:3px;
+            top:0;
+            cursor: pointer;
+        }
+        .picker-now{
+            color:#303233;
+            font-size:14px;
+            text-align: center;
+            height: 20px;
+            position:relative;
+            top:-4px;
+        }
+        .picker-right{
+            position:absolute;
+            right:3px;
+            top:0;
+            cursor: pointer;
+        }
+    }
+    .picker-content{
+        overflow-x:hidden;
+        width:100%;
+        .week-content{
+            margin-top:6px;
+            width:120%;
+            @include clearfix;
+            .week-item{
+                float:left;
+                width:27px;
+                height:27px;
+                line-height: 27px;
+                text-align:center;
+            }
+        }
+        .date-content{
+            margin-top:2px;
+            @include clearfix;
+            padding-bottom: 16px;
+            width:120%;
+            .day-item{
+                float:left;
+                width:25px;
+                height:25px;
+                text-align:center;
+                cursor: pointer;
+                border-radius:25px;
+                border:1px solid transparent;
+                line-height: 25px;
+                &.focus{
+                    background:$blueColor;
+                    border:1px solid $blueColor;
+                    color:#fff;
+                }
+                &.mark,&:hover{
+                    border:1px solid $blueColor;
+                }
+            }
+            .month-item,.year-item{
+                float:left;
+                width:39px;
+                height: 39px;
+                text-align: center;
+                line-height: 39px;
+                border-radius: 39px;
+                margin:6px 8px 4px 0;
+                cursor: pointer;
+                border:1px solid transparent;
+                &.focus{
+                    background:$blueColor;
+                    border:1px solid $blueColor;
+                    color:#fff;
+                }
+                &.mark,&:hover{
+                    border:1px solid $blueColor;
+                }
+            }
+            .year-item{
+                margin:6px 33px 4px 0px;
+            }
+        }
+    }
+}

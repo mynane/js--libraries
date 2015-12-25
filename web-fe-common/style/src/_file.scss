@@ -1,0 +1,17 @@
+.file-name-wrap{
+    color:#333;
+    .file-info{
+        margin-left: 6px;
+    }
+    .file-name{
+        color:#333;
+    }
+    .file-action{
+        color:$blueColor;
+        margin-top:3px;
+        a{
+            margin-right: 12px;
+            cursor: pointer;
+        }
+    }
+}

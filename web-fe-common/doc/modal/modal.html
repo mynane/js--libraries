@@ -1,0 +1,253 @@
+<!-- target:modal -->
+<div ui="type:demo" class="demo-wrap">
+    <dl class="demo_title">
+        <dt>
+            弹框组件
+        </dt>
+        <dd>
+            <h1>基本弹框</h1>
+            <code>
+                <div class="modal-wrap">
+                    <div class="modal-title">
+                        <h3 class="title">这是标题</h3>
+                        <span class="close">×</span>
+                    </div>
+                    <div class="modal-body tip">
+                        <div class="icon-tip"><i class="icon-modal-success-big"></i></div>
+                        <div class="title-tip">意见反馈成功</div>
+                        <div class="close-tip">3s后自动关闭</div>
+                    </div>
+                </div>
+                <div class="modal-wrap" ui="type:dialog;id:modal1">
+                    <div class="modal-title">
+                        <h3 class="title">这是标题</h3>
+                        <span class="close">×</span>
+                    </div>
+                    <div class="modal-body tip">
+                        <div class="icon-tip"><i class="icon-modal-success-big"></i></div>
+                        <div class="title-tip">意见反馈成功</div>
+                        <div class="close-tip">3s后自动关闭</div>
+                    </div>
+                </div>
+                <button class="btn confirm" onclick="ecui.get('modal1').$show();ecui.get('modal1').getMain().style.position='fixed'">打开参照实例</button>
+            </code>
+            <code>
+                <div class="modal-wrap">
+                    <div class="modal-title">
+                        <h3 class="title">这是标题</h3>
+                        <span class="close">×</span>
+                    </div>
+                    <div class="modal-body tip">
+                        <div class="icon-tip"><i class="icon-modal-warn-red-big"></i></div>
+                        <div class="title-tip">意见反馈成功</div>
+                        <div class="close-tip">3s后自动关闭</div>
+                    </div>
+                </div>
+            </code>
+            <code>
+                <div class="modal-wrap">
+                    <div class="modal-title">
+                        <h3 class="title">这是标题</h3>
+                        <span class="close">×</span>
+                    </div>
+                    <div class="modal-body tip">
+                        <div class="icon-tip"><i class="icon-modal-warn-blue-big"></i></div>
+                        <div class="title-tip">意见反馈成功</div>
+                        <div class="close-tip">3s后自动关闭</div>
+                    </div>
+                </div>
+            </code>
+            <code>
+                <div class="modal-wrap">
+                    <div class="modal-title">
+                        <h3 class="title">这是标题</h3>
+                        <span class="close">×</span>
+                    </div>
+                    <div class="modal-body tip">
+                        <div class="icon-tip"><i class="icon-modal-error-big"></i></div>
+                        <div class="title-tip">意见反馈成功</div>
+                        <div class="close-tip">3s后自动关闭</div>
+                    </div>
+                </div>
+            </code>
+            <code>
+                <div class="modal-wrap">
+                    <div class="modal-title">
+                        <h3 class="title">这是标题</h3>
+                        <span class="close">×</span>
+                    </div>
+                    <div class="modal-body tip">
+                        <div class="icon-tip"><i class="icon-modal-ask-big"></i></div>
+                        <div class="title-tip">意见反馈成功</div>
+                        <div class="close-tip">3s后自动关闭</div>
+                    </div>
+                </div>
+            </code>
+            <h1>提示性弹框</h1>
+            <code>
+                <div class="modal-wrap async-tip">
+                    <div class="modal-body">
+                        <div class="info">网速不给力，请稍后重试！</div>
+                    </div>
+                </div>
+            </code>
+            <code>
+                <div class="async-tip-content-wrap">
+                    <div class="async-tip-content singleline">
+                        <div class="singleline-wrap vertical-middle">
+                            <span class="mid-icon singleline-icon loading">
+                                <i class="icon-loading"></i>
+                            </span><span class="mid-text singleline-text">
+                            网速不给力，请稍后重试！</span>
+                        </div>
+                    </div>
+                </div>
+                <button style="position:absolute;right:0;" onclick="alertTip.show('你好啊')">打开提示框</button>
+            </code>
+            <code>
+                <div class="async-tip-content-wrap">
+                    <div class="async-tip-content singleline">
+                        <div class="singleline-wrap vertical-middle">
+                            <span class="mid-icon singleline-icon">
+                                <i class="icon-modal-success-small"></i>
+                            </span><span class="mid-text singleline-text">
+                            网速不给力，请稍后重试！</span>
+                        </div>
+                    </div>
+                </div>
+                <button style="position:absolute;right:0;" onclick="alertTip.show({title:'网速不给力，请稍后重试！',hide:false,type:'loading'})">打开提示框</button>
+            </code>
+            <code>
+                <div class="async-tip-content-wrap">
+                    <div class="async-tip-content">
+                        <div class="tip-wrap layout-float-wrap">
+                            <span class="close">×</span>
+                            <div class="tip-icon layout-float-left">
+                                <i class="icon-modal-success-small"></i>
+                            </div>
+                            <div class="tip-title layout-float-left">
+                                <h3>网络异常，连接失败！</h3>
+                                <div class="tip-detail">请检查你的网络是否连接，<a href="#">继续反馈</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button style="position:absolute;right:0;" onclick="alertTip.show({title:'你好啊',detail:'请检查你的网络是否连接，<a href=#>继续反馈</a>'})">打开提示框</button>
+            </code>
+            <code>
+                <div class="async-tip-content-wrap">
+                    <div class="async-tip-content">
+                        <div class="tip-wrap layout-float-wrap">
+                            <span class="close">×</span>
+                            <div class="tip-icon layout-float-left">
+                                <i class="icon-modal-warn-red-small"></i>
+                            </div>
+                            <div class="tip-title layout-float-left">
+                                <h3>网络异常，连接失败！</h3>
+                                <div class="tip-detail">请检查你的网络是否连接，<a href="#">继续反馈</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button style="position:absolute;right:0;" onclick="alertTip.show({title:'你好啊',type:'warn-red',detail:'请检查你的网络是否连接，<a href=#>继续反馈</a>'})">打开提示框</button>
+                </div>
+                
+            </code>
+            <code>
+                <div class="async-tip-content-wrap">
+                    <div class="async-tip-content">
+                        <div class="tip-wrap layout-float-wrap">
+                            <span class="close">×</span>
+                            <div class="tip-icon layout-float-left">
+                                <i class="icon-modal-warn-blue-small"></i>
+                            </div>
+                            <div class="tip-title layout-float-left">
+                                <h3>网络异常，连接失败！</h3>
+                                <div class="tip-detail">请检查你的网络是否连接，<a href="#">继续反馈</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </code>
+            <code>
+                <div class="async-tip-content-wrap">
+                    <div class="async-tip-content">
+                        <div class="tip-wrap layout-float-wrap">
+                            <span class="close">×</span>
+                            <div class="tip-icon layout-float-left">
+                                <i class="icon-modal-error-small"></i>
+                            </div>
+                            <div class="tip-title layout-float-left">
+                                <h3>网络异常，连接失败！</h3>
+                                <div class="tip-detail">请检查你的网络是否连接，<a href="#">继续反馈</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </code>
+            <code>
+                <div class="async-tip-content-wrap">
+                    <div class="async-tip-content">
+                        <div class="tip-wrap layout-float-wrap">
+                            <span class="close">×</span>
+                            <div class="tip-icon layout-float-left">
+                                <i class="icon-modal-ask-small"></i>
+                            </div>
+                            <div class="tip-title layout-float-left">
+                                <h3>网络异常，连接失败！</h3>
+                                <div class="tip-detail">请检查你的网络是否连接，<a href="#">继续反馈</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </code>
+            <h1>带按钮的弹框</h1>
+            <code>
+                <div class="modal-wrap">
+                    <div class="modal-title">
+                        <h3 class="title">这是标题</h3>
+                        <span class="close">×</span>
+                    </div>
+                    <div class="modal-body tip">
+                        <div class="icon-tip"><i class="icon-modal-success-big"></i></div>
+                        <div class="title-tip">意见反馈成功</div>
+                        <div class="close-tip">3s后自动关闭</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn cancel">取消</button><button class="btn confirm">确认</button>
+                    </div>
+                </div>
+            </code>
+        </dd>
+
+    </dl>
+    <dl class="demo_title">
+        <dt>
+            具体实例性弹框
+        </dt>
+        <dd>
+            <h1>提示确认性弹框</h1>
+            <code>
+                <div class="modal-wrap">
+                    <div class="modal-title">
+                        <h3 class="title">这是标题</h3>
+                        <span class="close">×</span>
+                    </div>
+                    <div class="modal-body tip-with-btn">
+                        <div class="tip-wrap layout-float-wrap">
+                            <div class="tip-icon layout-float-left">
+                                <i class="icon-modal-warn-red-small"></i>
+                            </div>
+                            <div class="tip-title layout-float-left">
+                                <h3>您现在签退属于早退，确定签退吗？</h3>
+                                <div class="tip-detail">早退可能会出现考勤异常。</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn cancel">取消</button><button class="btn confirm">确认</button>
+                    </div>
+                </div>
+            </code>
+        </dd>
+    </dl>
+</div>

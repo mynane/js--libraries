@@ -1,0 +1,13 @@
+@mixin icon-menu2-item-select{
+    background: url("img/1x/icon-menu2-item-select.png")!important;
+    width: 10px;
+    height: 10px;
+}
+.icon-menu2-item-select{
+    @include icon-menu2-item-select;
+}
+.icon-menu2-item{
+    background: url("img/1x/icon-menu2-item.png")!important;
+    width: 10px;
+    height: 10px;
+}

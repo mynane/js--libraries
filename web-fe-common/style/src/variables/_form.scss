@@ -1,0 +1,35 @@
+//input 文本颜色
+$inputColor:#323333;
+//input高度
+$inputWidth:428px;
+$inputGroupHeight:32px;
+$inputHeight:30px;
+$inputTitleWidth:48px;
+$inputTitleColor:#656666;
+$inputTitleBgColor:#f5f5f5;
+//input边框
+$inputBorderWidth:1px;
+$inputBorderColor:#d9d9d9;
+$inputBorderHoverColor:#b8b8b8;
+$inputBorderFocusColor:#2299ee;
+$inputBorderErrorColor:#ff4545;
+//input indent
+$inputIndent:10px;
+//input hover变化动画时间
+$inputTransitionTime:0.15s;
+//按钮
+/*下来框*/
+$selectBorderColor:#cacbcc;
+$selectItemColor:#323333;
+$selectItemHeight:30px;
+$selectItemHoverBg:#f2f2f2;
+//登录表单的特殊样式
+$LoginInputHeight:32px;
+/*
+图标样式
+*/
+$iconBackground:url(../img/icon.png) no-repeat;
+/*按钮样式*/
+$btnBorderRadius:2px;
+/*投影*/
+$boxShadow:3px 4px 5px 0px rgba(0, 0, 0, 0.2);

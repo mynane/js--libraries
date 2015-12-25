@@ -1,0 +1,40 @@
+.jTree{
+    font-size:0;
+    letter-spacing: -4px;
+    .jnode{
+    }
+    .jtree{
+        padding-left:18px;
+    }
+    .jtree-title{
+        font-size:12px;
+        letter-spacing: normal;
+        display: inline-block;
+        height: 31px;
+        line-height: 31px;
+        vertical-align: middle;
+    }
+    .icon-checkbox{
+        .checkbox-wrap{
+            margin-right:0;
+        }
+        margin-right:10px;
+        vertical-align: middle;
+    }
+    .icon-switch{
+        border:5px solid transparent;
+        border-right:0;
+        border-left:5px solid #9a9a9a;
+        display: inline-block;
+        margin-right:10px;
+        vertical-align: middle;
+        &.nochild{
+            width:5px;
+            border:0;
+        }
+        &.level0{
+            width:0;
+            display: none;
+        }
+    }
+}
