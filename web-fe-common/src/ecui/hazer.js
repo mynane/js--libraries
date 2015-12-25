@@ -118,4 +118,82 @@
         });
 
 
+}(ecui));
+
+
+(function(){
+     var core = ecui,
+        dom = core.dom,
+        io=core.io,
+        ui = core.ui,
+        util = core.util,
+        ieVersion = /(msie (\d+\.\d)|IEMobile\/(\d+\.\d))/i.test(navigator.userAgent) ? document.documentMode || +(RegExp.$2 || RegExp.$3) : undefined;
+        /**
+        * 设置 Element 对象的属性值。
+        * 在 IE 下，Element 对象的属性可以通过名称直接访问，效率是 setAttribute 方式的两倍。
+        * @public
+        *
+        * @param {HTMLElement} el Element 对象
+        * @param {object} obj 对像集合
+        * @return {string} 属性值
+        */
+        function setAttribute(el,obj){
+                if(ieVersion<8){
+                        for(var a in obj){
+                                el[a] = obj[a];
+                        }
+                } else {
+                        for(var a in obj){
+                                el.setAttribute(a, obj[a]);
+                        }
+                }
+        };
+        /**
+         * 获取属性封装
+         * @param  {[HTMLElement]} el   目标对象
+         * @param  {[string]} name 属性名
+         * @return {[string]}      属性值
+         */
+        function getAttribute(el,name){
+            if(ieVersion<8){
+                return el[name];
+            }else{
+                return el.getAttribute(name);
+            }
+        }
+        ui.JsonTree=core.inherits(
+            ui.Control,
+            'ui-json',
+            function(el,options){
+                ui.Control.constructor.call(this, el, options);
+                var that=this;
+               io.ajax('hazer/json.js',{
+                onsuccess: function (data) {
+                    var json = JSON.parse(data);
+                    that.json=json;
+
+                    json.forEach(function(item,index){
+                        var a=Array.call(item)
+                        console.log(a.length);
+                    });
+                    },
+                onerror: function () {
+                       alert('你请求的数据有错！');
+                    }
+               });
+               setAttribute(el,{style:"height:20px;border:1px solid #333;width:30px;"});
+               this._jTree=el;
+            },
+            {
+                $click:function(event){
+                     ui.Control.prototype.$click.call(this,event);
+                     var json=this.json;
+                     dom.addEventListener(this._jTree,'click',function(event){
+                        json.forEach(function(item,index){
+
+                        });
+                     });
+                }
+            });
+
 }(ecui))
