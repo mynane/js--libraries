@@ -161,38 +161,49 @@
                 return el.getAttribute(name);
             }
         }
+        /**
+        *console.log()封装简写
+        */
+        function c(str){
+            console.log(str);
+        }
         ui.JsonTree=core.inherits(
             ui.Control,
             'ui-json',
             function(el,options){
                 ui.Control.constructor.call(this, el, options);
                 var that=this;
-               io.ajax('hazer/json.js',{
-                onsuccess: function (data) {
-                    var json = JSON.parse(data);
-                    that.json=json;
-
-                    json.forEach(function(item,index){
-                        var a=Array.call(item)
-                        console.log(a.length);
-                    });
-                    },
-                onerror: function () {
-                       alert('你请求的数据有错！');
-                    }
+                var src=options.json;
+               io.loadScript('hazer/json.js',function(){
+                    _fold();
                });
-               setAttribute(el,{style:"height:20px;border:1px solid #333;width:30px;"});
+
+               function _fold(){
+                 // console.log(eval(src));
+                 var _json=eval(src);
+                 var len=_json.length;
+                 var _current=null;
+                 if(len>0){
+                    function  exhaustion(_current){
+
+                    }
+                    _current=_json[0];
+                    while(_current.children){
+                        _current=_current.children;
+                    }
+                    c(_current);
+                 }
+                 
+
+               }
+              
+               // setAttribute(el,{style:"height:20px;border:1px solid #333;width:30px;"});
                this._jTree=el;
             },
             {
                 $click:function(event){
                      ui.Control.prototype.$click.call(this,event);
-                     var json=this.json;
-                     dom.addEventListener(this._jTree,'click',function(event){
-                        json.forEach(function(item,index){
-
-                        });
-                     });
+                   
                 }
             });
 
