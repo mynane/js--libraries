@@ -1,0 +1,904 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+   <style type="text/css">
+   /*
+CSS stylesheet is based on killwing's flavored markdown style:
+https://gist.github.com/2937864
+*/
+body{
+    margin: 0 auto;
+    font: 13px/1.231 Helvetica, Arial, sans-serif;
+    color: #444444;
+    line-height: 1;
+    max-width: 960px;
+    padding: 5px;
+}
+h1, h2, h3, h4 {
+    color: #111111;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 16px;
+    padding: 0;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 22px;
+    margin: 20px 0 6px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a:link,a:visited{
+ text-decoration:none;
+}
+a:hover{
+ text-decoration:underline;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 24px;
+    margin-left: 44px;
+}
+li ul, li ul {
+    margin-left: 24px;
+}
+ul, ol {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 540px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 540px;
+    margin-top: 3px;
+}
+
+pre {
+    padding: 0px 4px;
+    max-width: 800px;
+    white-space: pre-wrap;
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+pre code {
+    border: 0px;
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    border-left:.5em solid #40AA53;
+    padding: 0 2em;
+    margin-left:0;
+    max-width: 476px;
+}
+blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+blockquote p {  
+    color: #666;
+    max-width: 460px;
+}
+hr {
+    height: 1px;
+    border: none;
+    border-top: 1px dashed #0066CC
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+}
+/* override default chrome & firefox settings */
+input:not([type="image"]), textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+label,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  display: inline-block;
+  width: 210px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  height: 18px;
+  color: #808080;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+select, input[type=file] {
+  height: 27px;
+  line-height: 27px;
+}
+textarea {
+  height: auto;
+}
+
+/* grey out placeholders */
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+/* buttons */
+button {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #004b9a;
+  border-bottom-color: #003f81;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  color: #fff;
+  background-position: 0 -15px;
+  text-decoration: none;
+}
+button:active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+/* table  */
+table {
+    border-spacing: 0;
+    border: 1px solid #ccc;
+}
+td, th{
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+/* code syntax highlight.
+Documentation: http://www.mdcharm.com/documentation/code_syntax_highlighting.html#custom_your_own
+ */
+pre .literal,
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .javadoc {
+    color: #008000;
+}
+
+pre .keyword,
+pre .css .rule .keyword,
+pre .winutils,
+pre .javascript .title,
+pre .nginx .title,
+pre .subst,
+pre .request,
+pre .status {
+    color: #0000FF;
+    font-weight: bold
+}
+
+pre .number,
+pre .hexcolor,
+pre .python .decorator,
+pre .ruby .constant {
+    color: #0000FF;
+}
+
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula {
+    color: #D14
+}
+
+pre .title,
+pre .id {
+    color: #900;
+    font-weight: bold
+}
+
+pre .javascript .title,
+pre .lisp .title,
+pre .clojure .title,
+pre .subst {
+    font-weight: normal
+}
+
+pre .class .title,
+pre .haskell .type,
+pre .vhdl .literal,
+pre .tex .command {
+    color: #458;
+    font-weight: bold
+}
+
+pre .tag,
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+    color: #000080;
+    font-weight: normal
+}
+
+pre .attribute,
+pre .variable,
+pre .lisp .body {
+    color: #008080
+}
+
+pre .regexp {
+    color: #009926
+}
+
+pre .class {
+    color: #458;
+    font-weight: bold
+}
+
+pre .symbol,
+pre .ruby .symbol .string,
+pre .lisp .keyword,
+pre .tex .special,
+pre .prompt {
+    color: #990073
+}
+
+pre .built_in,
+pre .lisp .title,
+pre .clojure .built_in {
+    color: #0086b3
+}
+
+pre .preprocessor,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .cdata {
+    color: #999;
+    font-weight: bold
+}
+
+pre .deletion {
+    background: #fdd
+}
+
+pre .addition {
+    background: #dfd
+}
+
+pre .diff .change {
+    background: #0086b3
+}
+
+pre .chunk {
+    color: #aaa
+}
+
+pre .markdown .header {
+    color: #800;
+    font-weight: bold;
+}
+
+pre .markdown .blockquote {
+    color: #888;
+}
+
+pre .markdown .link_label {
+    color: #88F;
+}
+
+pre .markdown .strong {
+    font-weight: bold;
+}
+
+pre .markdown .emphasis {
+    font-style: italic;
+}
+   </style>
+   
+   
+</head>
+<body>
+    <h2><strong>Syntax</strong></h2>
+
+<ul>
+<li>基础
+
+<ul>
+<li><a href="#%E8%AF%AD%E6%B3%95%E5%BD%A2%E5%BC%8F">语法形式</a></li>
+<li><a href="#target">target</a></li>
+<li><a href="#%E5%8F%98%E9%87%8F%E6%9B%BF%E6%8D%A2">变量替换</a></li>
+</ul></li>
+<li>模板复用
+
+<ul>
+<li><a href="#import">import</a></li>
+<li><a href="#%E6%AF%8D%E7%89%88">母版</a></li>
+<li><a href="#%E5%BC%95%E7%94%A8%E4%BB%A3%E5%85%A5">引用代入</a></li>
+<li><a href="#use">use</a></li>
+</ul></li>
+<li>分支与循环
+
+<ul>
+<li><a href="#if">if</a></li>
+<li><a href="#for">for</a></li>
+</ul></li>
+<li>其他
+
+<ul>
+<li><a href="#%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E">变量声明</a></li>
+<li><a href="#%E5%86%85%E5%AE%B9%E5%9D%97%E8%BF%87%E6%BB%A4">内容块过滤</a></li>
+</ul></li>
+</ul>
+
+<h2><strong>基础</strong></h2>
+
+<h3><strong><span id="语法形式">语法形式</span></strong></h3>
+
+<p>ETPL的指令标签默认为HTML注释的形式，在指令标签内允许声明 指令起始、指令结束和注释。</p>
+
+<p>指令起始的语法形式为： &lt;!-- command-name: command-value --&gt;。其中， command-value 的具体语法形式详情请参见各指令相关章节。</p>
+
+<pre><code>  &lt;!-- target: targetName --&gt;
+  &lt;!-- if: ${number} &gt; 0 --&gt;
+  &lt;!-- for: ${persons} as ${person}, ${index} --&gt;
+</code></pre>
+
+<p>指令结束的语法形式为： &lt;!-- /command-name --&gt;。</p>
+
+<pre><code>  &lt;!-- /if --&gt;
+  &lt;!-- /for --&gt;
+  &lt;!-- /target --&gt;
+</code></pre>
+
+<p>注释的语法形式为： &lt;!-- //message --&gt;，注释指令在render时将不输出。</p>
+
+<pre><code>  &lt;!-- // just add some message --&gt;
+</code></pre>
+
+<p>如果不期望使用HTML注释形式的指令标签，可以通过config API可以配置指令标签的形式：</p>
+
+<pre><code class="javascript">etpl.config({
+    commandOpen: <span class="string">'&lt;%'</span>,
+    commandClose: <span class="string">'%&gt;'</span>
+});
+
+<span class="comment">/* 
+配置指令标签的形式为“&lt;% ... %&gt;”，然后指令标签可以像下面一样声明:
+&lt;% if: ${number} &gt; 0 %&gt;
+greater than zero
+&lt;% /if %&gt;
+*/
+</span></code></pre>
+
+<h3><strong>自动结束</strong></h3>
+
+<p>为了减少开发者的工作量，部分指令标签支持自动结束，模板开发者无需手工编写指令结束。比如：当遇见target指令起始时，ETPL自动认为上一个target已经结束。</p>
+
+<p>具体指令的自动结束支持，请参考相应指令相关章节。</p>
+
+<h3><span id="target">target</span></h3>
+
+<p>target是ETPL的基本单元，其含义是 一个<strong>模版片段</strong> 。target可用于render，也可用于被其他target所import或use，也可以被其他target以母版的方式继承。</p>
+
+<p>在target中可以任意编写block片段。block主要的作用是做为 <strong>可被替换片段</strong> ，在母版或引用代入功能中被使用。详细的使用方式请参考<a href="https://github.com/mynane/etpl/blob/master/doc/syntax.md#%E6%A8%A1%E6%9D%BF%E5%A4%8D%E7%94%A8" title="模板复用">模板复用</a>章节。</p>
+
+<h3><strong>语法</strong></h3>
+
+<p>target的语法形式为：</p>
+
+<pre><code class="javascript">  target: target-name
+  target: target-name(master=master-name)
+</code></pre>
+
+<p>block的语法形式为：</p>
+
+<pre><code>  block: block-name
+</code></pre>
+
+<h3><strong>自动结束</strong></h3>
+
+<p>target支持自动结束，当遇见 target 时自动结束。</p>
+
+<p>block不支持自动结束，必须手工编写指令结束。</p>
+
+<h3><strong>示例</strong></h3>
+
+<pre><code>  &lt;!-- target: hello --&gt;
+  Hello &lt;strong&gt;ETPL&lt;/strong&gt;!
+
+  &lt;!-- target: bye --&gt;
+  Bye &lt;strong&gt;ETPL&lt;/strong&gt;!
+
+  &lt;!-- target: page --&gt;
+  &lt;header&gt;
+    &lt;!-- block: header --&gt;Header Content&lt;!-- /block --  &gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;main&quot;&gt;&lt;!-- block: content --&gt;&lt;!-- /block   --&gt;  
+  &lt;/div&gt;
+</code></pre>
+
+<h3><strong>匿名</strong>target</h3>
+
+<p>如果仅仅编写的是一个模板片段，可以省略<code>target</code>的声明。这样的编写方式与其他模板引擎类似，ETPL将默认生成匿名target，但模板片段将不可复用（不可被import或use，不可指定母版）。</p>
+
+<p>匿名target应位于模板源码起始。下面例子中，位于其他target后的模板片段Bye将没有任何作用。</p>
+
+<pre><code>  &lt;!-- use: hello(name=${name}) --&gt;
+  &lt;!-- target: hello --&gt;
+  Hello ${name}!
+  &lt;!-- /target --&gt;
+  Bye
+</code></pre>
+
+<h3><strong><span id="变量替换">变量替换</span></strong></h3>
+
+<p>绝大多数模板引擎都支持变量替换功能。ETPL变量替换的语法为：</p>
+
+<pre><code>  ${variable-name}
+  ${variable-name|filter-name}
+  ${variable-name|filter-name(arguments)}
+  ${variable-name|filter1|filter2(arguments)|                   
+  filter3|...}
+</code></pre>
+
+<p>variable-name支持.形式的property access。</p>
+
+<p>编写模板时可以指定filter，默认使用html filter进行HTML转义。如果想要保留变量的原形式，需要手工指定使用名称为raw的filter，或者通过config API配置引擎的defaultFilter参数。</p>
+
+<pre><code>  ${myVariable|raw}
+</code></pre>
+
+<pre><code>  etpl.config({ 
+    defaultFilter: &#39;&#39;
+  });
+</code></pre>
+
+<p>ETPL默认支持3种filters，可以通过引擎的addFilter方法自定义扩展filter。</p>
+
+<ul>
+<li>html: html转义</li>
+<li>url: url转义</li>
+<li>raw: 不进行任何转义<br></li>
+</ul>
+
+<p>变量替换支持多filter处理。filter之间以类似管道的方式，前一个filter的输出做为后一个filter的输入，向后传递。</p>
+
+<pre><code> ${myVariable|html|url}
+</code></pre>
+
+<p>filter支持参数传递，参数可以使用动态数据。</p>
+
+<pre><code>&lt;!-- // 假设存在扩展filter: comma --&gt;
+${myVariable|comma(3)}
+${myVariable|comma(${commaLength})}
+${myVariable|comma(${commaLength}+1)}
+</code></pre>
+
+<p>在变量替换中，引擎会默认将数据toString后传递给filter，以保证filter输入输出的类型一致性。如果filter期望接受的是原始数据，模板开发者需要通过前缀的*指定。</p>
+
+<pre><code>&lt;!-- // 假设存在扩展filter: dateFormat --&gt;
+${*myDate|dateFormat(&#39;yyyy-MM-dd&#39;)}
+</code></pre>
+
+<h2><strong>模板复用</strong></h2>
+
+<p>ETPL支持多种形式的模板复用方式，帮助模板开发者减少模板编写的重复劳动和维护成本。</p>
+
+<h3><span id="import">import</span></h3>
+
+<p>通过import指令，可以在当前位置插入指定target的源码。</p>
+
+<h3><strong>语法</strong></h3>
+
+<p>import的语法形式为：</p>
+
+<pre><code>  import: target-name
+</code></pre>
+
+<h3><strong>示例</strong></h3>
+
+<pre><code>  &lt;!-- target: hello --&gt;
+  Hello &lt;strong&gt;${name}&lt;/strong&gt;!
+
+  &lt;!-- target: main --&gt;
+  &lt;div class=&quot;main&quot;&gt;&lt;!-- import: hello --&gt;&lt;/div&gt;
+</code></pre>
+
+<h3><strong>自动结束</strong></h3>
+
+<p>如果不编写import的指令结束，其指令起始后立即自动结束。</p>
+
+<p>如果需要使用import的引用代入功能，需要手工编写指令结束。</p>
+
+<h3><strong><span id="母版">母版</span></strong></h3>
+
+<p>target声明时可以通过<strong>master=master-name</strong> 指定一个继承的母版。并且通过自身的<code>block</code>指令，能够替换母版中同名<code>block</code>指令声明部分的内容。</p>
+
+<p>模版继承（母版）功能允许你在一开始就对多个相似的模板从“结构”的角度进行抽象。继承自一个和你具有相同结构的母版，你可以无需再编写结构骨架部分，只需要编写结构内部的内容差异部分。</p>
+
+<h3><strong>示例</strong></h3>
+
+<pre><code>  &lt;!-- target: myTpl(master = page) --&gt;
+  &lt;!-- block: content --&gt;
+    Hello ${name}!
+  &lt;!-- /block --&gt;
+
+  &lt;!-- target: page --&gt;
+  &lt;header&gt;
+  &lt;!-- block: header --&gt;Header Content&lt;!-- /block --&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;main&quot;&gt;&lt;!-- block: content --&gt;&lt;!-- /block --&gt;
+  &lt;/div&gt;
+</code></pre>
+
+<h3><strong>复杂示例</strong></h3>
+
+<pre><code>  &lt;!-- target: myMaster --&gt;
+  &lt;div class=&quot;title&quot;&gt;
+    &lt;!-- block: title --&gt;title&lt;!-- /block --&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;main&quot;&gt;
+    &lt;!-- block: main --&gt;&lt;!-- /block --&gt;
+  &lt;/div&gt;
+
+  &lt;!-- target: myMaster-has-sidebar(master=myMaster) 
+  --&gt;
+  &lt;!-- block: title --&gt;title for has sidebar&lt;!-- /block 
+  --&gt;
+  &lt;!-- block: main --&gt;
+    &lt;div class=&quot;sidebar&quot;&gt;&lt;!-- block: sidebar --&gt;&lt;!-- /block 
+    --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;article&quot;&gt;&lt;!-- block: article --&gt;&lt;!-- /block 
+    --&gt;
+    &lt;/div&gt;
+  &lt;!-- /block --&gt;
+
+  &lt;!-- target: myTarget(master=myMaster) --&gt;
+  &lt;!-- block: title --&gt;
+    Building WebKit from Xcode
+  &lt;!-- /block --&gt;
+  &lt;!-- block: main --&gt;
+    &lt;p&gt;To build from within Xcode, you can use the WebKit workspace. &lt;/p&gt;
+  &lt;!-- /block --&gt;
+
+  &lt;!-- target: myTarget-has-sidebar(master=myMaster-has-sidebar) --&gt;
+  &lt;!-- block: sidebar --&gt;
+    &lt;ul class=&quot;navigator&quot;&gt;...&lt;/ul&gt;
+  &lt;!-- /block --&gt;
+  &lt;!-- block: article --&gt;
+    &lt;p&gt;To build from within Xcode, you can use the WebKit workspace. &lt;/p&gt;
+  &lt;!-- /block --&gt;
+</code></pre>
+
+<h3><strong><span id="引用代入">引用代入</span></strong></h3>
+
+<p>通过<code>import</code>指令引入一个<code>targe</code>t时，可以定制其<code>block</code>部分的内容。</p>
+
+<p>如果有一个模板的大部分可以复用时，通过引用代入功能，你可以在引用时抹平差异，定制其中差异部分内容。当你面临结构种类数量爆炸时，引用代入提供了另一种更灵活的复用方式。</p>
+
+<p>使用引用代入功能，<code>import</code>需要手工编写指令结束，并且<code>import</code>中只允许包含<code>block</code>，其他指令将被忽略。</p>
+
+<h3><strong>示例</strong></h3>
+
+<pre><code>&lt;!-- target: myTpl --&gt;
+&lt;!-- import: header --&gt;
+&lt;!-- import: main --&gt;
+    &lt;!-- block: main --&gt;
+        &lt;div class=&quot;list&quot;&gt;list&lt;/div&gt;
+        &lt;div class=&quot;pager&quot;&gt;pager&lt;/div&gt;
+    &lt;!-- /block --&gt;
+&lt;!-- /import --&gt;
+
+&lt;!-- target: header --&gt;
+&lt;header&gt;&lt;!-- block: header --&gt;default header&lt;!-- /block --&gt;&lt;/header&gt;
+
+&lt;!-- target: main --&gt;
+&lt;div&gt;
+    &lt;!-- block: main --&gt;default main&lt;!-- /block --&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3><span id="use">use</span></h3>
+
+<p>通过<code>use</code>指令，可以调用指定<code>target</code>，在当前位置插入其<code>render</code>后的结果。允许使用静态或动态数据指定数据项。</p>
+
+<p>在面临多种不同的数据名称、相似的结构时，动态调用可以让你只编写一份代码，多次调用。</p>
+
+<h3><strong>语法</strong></h3>
+
+<p>use的语法形式为：</p>
+
+<pre><code>use: target-name
+use: target-name(data-name=expression, data-name=expression)
+</code></pre>
+
+<h3><strong>示例</strong></h3>
+
+<pre><code>&lt;ul&gt;
+&lt;!-- for: ${persons} as ${p} --&gt;
+    &lt;!-- use: item(main=${p.name}, sub=${p.email}) --&gt;
+&lt;!-- /for --&gt;
+&lt;/ul&gt;
+
+&lt;!-- target: item --&gt;&lt;li&gt;${main}[${sub}]&lt;/li&gt;
+</code></pre>
+
+<h3><strong>自动结束</strong></h3>
+
+<p>use无需编写指令结束，其将在指令起始后立即自动结束。</p>
+
+<h2><strong>分支与循环</strong></h2>
+
+<h3><span id="if">if</span></h3>
+
+<p>ETPL提供了分支的支持，相关指令有<code>if</code>、<code>elif</code>、<code>else</code>。</p>
+
+<h3><strong>语法</strong></h3>
+
+<p>if的语法形式为：</p>
+
+<pre><code>if: conditional-expression
+</code></pre>
+
+<p>elif的语法形式为：</p>
+
+<pre><code>elif: conditional-expression
+</code></pre>
+
+<p>else的语法形式为：</p>
+
+<pre><code>else
+</code></pre>
+
+<p>conditional-expression中可以使用动态数据，通过<code>${variable}</code>的形式，可以使用模板render的data。<code>${variable}</code>支持.的property accessor。</p>
+
+<h3><strong>自动结束</strong></h3>
+
+<p>if指令不支持自动结束，必须手工编写指令结束<code>&lt;!-- /if --&gt;</code>。</p>
+
+<h3><strong>示例</strong></h3>
+
+<pre><code>&lt;!-- if: ${number} &gt; 0 --&gt;
+larger than zero
+&lt;!-- elif: ${number} == 0 --&gt;
+zero
+&lt;!-- else --&gt;
+invalid
+&lt;!-- /if --&gt;
+</code></pre>
+
+<h3><strong>自动结束</strong></h3>
+
+<p>if指令不支持自动结束，必须手工编写指令结束。</p>
+
+<pre><code>&lt;!-- /if --&gt;
+</code></pre>
+
+<h3><strong><span id="for">for</span></strong></h3>
+
+<p>通过for指令的支持，可以实现对Array和Object的遍历。Array为正序遍历，Object为不保证顺序的forin。</p>
+
+<h3><strong>语法</strong></h3>
+
+<p>for的语法形式为：</p>
+
+<pre><code>for: ${variable} as ${item-variable}
+for: ${variable} as ${item-variable}, ${index-variable}
+for: ${variable} as ${item-variable}, ${key-variable}
+</code></pre>
+
+<p>其中，<code>${variable}</code>为想要遍历的对象，支持.形式的property access。在遍历过程中，声明的<code>${item-variable}</code>和<code>${index-variable}</code>，分别代表数据项和索引（遍历Object时为键名）。</p>
+
+<h3><strong>示例</strong></h3>
+
+<pre><code>&lt;ul&gt;
+&lt;!-- for: ${persons} as ${person}, ${index} --&gt;
+&lt;li&gt;${index}: ${person.name}
+&lt;!-- /for --&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<h3><strong>自动结束</strong></h3>
+
+<p>for指令不支持自动结束，必须手工编写指令结束。</p>
+
+<pre><code>&lt;!-- /for --&gt;
+</code></pre>
+
+<h2><strong>其他</strong></h2>
+
+<h3><strong><span id="变量声明">变量声明</span></strong></h3>
+
+<p>通过<code>var</code>指令可以在模板内部声明一个变量。声明的变量在整个<code>target</code>内有效。</p>
+
+<p>语法</p>
+
+<p>var的语法形式为：</p>
+
+<pre><code>var: var-name=expression
+</code></pre>
+
+<p><code>expression</code>中可以使用静态或动态数据。</p>
+
+<h3><strong>示例</strong></h3>
+
+<pre><code>&lt;!-- var: age = 18 --&gt;
+&lt;!-- var: age = ${person.age} --&gt;
+&lt;!-- var: name = &#39;etpl&#39; --&gt;
+</code></pre>
+
+<h3><strong>自动结束</strong></h3>
+
+<p><code>var</code>无需编写指令结束，其将在指令起始后立即自动结束。</p>
+
+<h3><strong><span id="内容块过滤">内容块过滤</span></strong></h3>
+
+<p>除了在变量替换中可以使用<code>filter</code>进行处理，ETPL还可以通过<code>filter</code>指令，使用指定的<code>filter</code>对一个模板内容块进行过滤处理。</p>
+
+<h3><strong>语法</strong></h3>
+
+<p>filter的语法形式为：</p>
+
+<pre><code>filter: filter-name
+filter: filter-name(arguments)
+</code></pre>
+
+<h3><strong>示例</strong></h3>
+
+<p>下面的例子假定使用者实现了一个<code>markdown</code>的<code>filter</code></p>
+
+<pre><code>&lt;!-- filter: markdown(${useExtra}, true) --&gt;
+## markdown document
+
+This is the content, also I can use `${variables}`
+&lt;!-- /filter --&gt;
+</code></pre>
+
+<h3><strong>自动结束</strong></h3>
+
+<p>filter指令不支持自动结束，必须手工编写指令结束。</p>
+
+<pre><code>&lt;!-- /filter --&gt;
+</code></pre>
+
+</body>
+</html>

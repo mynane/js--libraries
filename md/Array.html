@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+   <style type="text/css">
+   /*CSS stylesheet is based on killwing's flavored markdown style:https://gist.github.com/2937864*/body{    margin: 0 auto;    font: 13px/1.231 Helvetica, Arial, sans-serif;    color: #444444;    line-height: 1;    max-width: 960px;    padding: 5px;}h1, h2, h3, h4 {    color: #111111;    font-weight: 400;}h1, h2, h3, h4, h5, p {    margin-bottom: 16px;    padding: 0;}h1 {    font-size: 28px;}h2 {    font-size: 22px;    margin: 20px 0 6px;}h3 {    font-size: 21px;}h4 {    font-size: 18px;}h5 {    font-size: 16px;}a {    color: #0099ff;    margin: 0;    padding: 0;    vertical-align: baseline;}a:link,a:visited{ text-decoration:none;}a:hover{ text-decoration:underline;}ul, ol {    padding: 0;    margin: 0;}li {    line-height: 24px;    margin-left: 44px;}li ul, li ul {    margin-left: 24px;}ul, ol {    font-size: 14px;    line-height: 20px;    max-width: 540px;}p {    font-size: 14px;    line-height: 20px;    max-width: 540px;    margin-top: 3px;}pre {    padding: 0px 4px;    max-width: 800px;    white-space: pre-wrap;    font-family: Consolas, Monaco, Andale Mono, monospace;    line-height: 1.5;    font-size: 13px;    border: 1px solid #ddd;    background-color: #f7f7f7;    border-radius: 3px;}code {    font-family: Consolas, Monaco, Andale Mono, monospace;    line-height: 1.5;    font-size: 13px;    border: 1px solid #ddd;    background-color: #f7f7f7;    border-radius: 3px;}pre code {    border: 0px;}aside {    display: block;    float: right;    width: 390px;}blockquote {    border-left:.5em solid #40AA53;    padding: 0 2em;    margin-left:0;    max-width: 476px;}blockquote  cite {    font-size:14px;    line-height:20px;    color:#bfbfbf;}blockquote cite:before {    content: '\2014 \00A0';}blockquote p {      color: #666;    max-width: 460px;}hr {    height: 1px;    border: none;    border-top: 1px dashed #0066CC}button,input,select,textarea {  font-size: 100%;  margin: 0;  vertical-align: baseline;  *vertical-align: middle;}button, input {  line-height: normal;  *overflow: visible;}button::-moz-focus-inner, input::-moz-focus-inner {  border: 0;  padding: 0;}button,input[type="button"],input[type="reset"],input[type="submit"] {  cursor: pointer;  -webkit-appearance: button;}input[type=checkbox], input[type=radio] {  cursor: pointer;}/* override default chrome & firefox settings */input:not([type="image"]), textarea {  -webkit-box-sizing: content-box;  -moz-box-sizing: content-box;  box-sizing: content-box;}input[type="search"] {  -webkit-appearance: textfield;  -webkit-box-sizing: content-box;  -moz-box-sizing: content-box;  box-sizing: content-box;}input[type="search"]::-webkit-search-decoration {  -webkit-appearance: none;}label,input,select,textarea {  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  font-size: 13px;  font-weight: normal;  line-height: normal;  margin-bottom: 18px;}input[type=checkbox], input[type=radio] {  cursor: pointer;  margin-bottom: 0;}input[type=text],input[type=password],textarea,select {  display: inline-block;  width: 210px;  padding: 4px;  font-size: 13px;  font-weight: normal;  line-height: 18px;  height: 18px;  color: #808080;  border: 1px solid #ccc;  -webkit-border-radius: 3px;  -moz-border-radius: 3px;  border-radius: 3px;}select, input[type=file] {  height: 27px;  line-height: 27px;}textarea {  height: auto;}/* grey out placeholders */:-moz-placeholder {  color: #bfbfbf;}::-webkit-input-placeholder {  color: #bfbfbf;}input[type=text],input[type=password],select,textarea {  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;  transition: border linear 0.2s, box-shadow linear 0.2s;  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);}input[type=text]:focus, input[type=password]:focus, textarea:focus {  outline: none;  border-color: rgba(82, 168, 236, 0.8);  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);}/* buttons */button {  display: inline-block;  padding: 4px 14px;  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  font-size: 13px;  line-height: 18px;  -webkit-border-radius: 4px;  -moz-border-radius: 4px;  border-radius: 4px;  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);  background-color: #0064cd;  background-repeat: repeat-x;  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);  background-image: -o-linear-gradient(top, #049cdb, #0064cd);  background-image: linear-gradient(top, #049cdb, #0064cd);  color: #fff;  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);  border: 1px solid #004b9a;  border-bottom-color: #003f81;  -webkit-transition: 0.1s linear all;  -moz-transition: 0.1s linear all;  transition: 0.1s linear all;  border-color: #0064cd #0064cd #003f81;  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);}button:hover {  color: #fff;  background-position: 0 -15px;  text-decoration: none;}button:active {  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);}button::-moz-focus-inner {  padding: 0;  border: 0;}/* table  */table {    border-spacing: 0;    border: 1px solid #ccc;}td, th{    border: 1px solid #ccc;    padding: 5px;}/* code syntax highlight.Documentation: http://www.mdcharm.com/documentation/code_syntax_highlighting.html#custom_your_own */pre .literal,pre .comment,pre .template_comment,pre .diff .header,pre .javadoc {    color: #008000;}pre .keyword,pre .css .rule .keyword,pre .winutils,pre .javascript .title,pre .nginx .title,pre .subst,pre .request,pre .status {    color: #0000FF;    font-weight: bold}pre .number,pre .hexcolor,pre .python .decorator,pre .ruby .constant {    color: #0000FF;}pre .string,pre .tag .value,pre .phpdoc,pre .tex .formula {    color: #D14}pre .title,pre .id {    color: #900;    font-weight: bold}pre .javascript .title,pre .lisp .title,pre .clojure .title,pre .subst {    font-weight: normal}pre .class .title,pre .haskell .type,pre .vhdl .literal,pre .tex .command {    color: #458;    font-weight: bold}pre .tag,pre .tag .title,pre .rules .property,pre .django .tag .keyword {    color: #000080;    font-weight: normal}pre .attribute,pre .variable,pre .lisp .body {    color: #008080}pre .regexp {    color: #009926}pre .class {    color: #458;    font-weight: bold}pre .symbol,pre .ruby .symbol .string,pre .lisp .keyword,pre .tex .special,pre .prompt {    color: #990073}pre .built_in,pre .lisp .title,pre .clojure .built_in {    color: #0086b3}pre .preprocessor,pre .pi,pre .doctype,pre .shebang,pre .cdata {    color: #999;    font-weight: bold}pre .deletion {    background: #fdd}pre .addition {    background: #dfd}pre .diff .change {    background: #0086b3}pre .chunk {    color: #aaa}pre .markdown .header {    color: #800;    font-weight: bold;}pre .markdown .blockquote {    color: #888;}pre .markdown .link_label {    color: #88F;}pre .markdown .strong {    font-weight: bold;}pre .markdown .emphasis {    font-style: italic;}
+   </style>
+   
+   
+</head>
+<body>
+    <h2><center>Array的一些方法总结</center></h2>
+
+<h2>在ES5中，一共有9个Array方法</h2>
+
+<pre><code>Array.prototype.indexof
+Array.prototype.lastIndexOf
+Array.prototype.every
+Array.prototype.some
+Array.prototype.forEach
+Array.prototype.map
+Array.prototype.filter
+Array.prototype.reduce
+Array.prototype.reduceRight
+</code></pre>
+
+<h4>1、indexOf</h4>
+
+<p><code>indexOf()</code>,返回查找到该数组中第一个找到的元素位置，没有找到就返回-1.</p>
+
+<h4>2、lastIndexOf</h4>
+
+<p><code>lastIndexOf()</code>,从结尾开始查找，如果找到就返回位置，未找到返回-1.</p>
+
+<h4>3、filter</h4>
+
+<p><code>filter()</code>,返回一个满新匹配过滤条件的数组
+不用filter时：</p>
+
+<pre><code>var arr=[
+    {&quot;name&quot;:&quot;apple&quot;,&quot;count&quot;:2},
+    {&quot;name&quot;:&quot;orange&quot;,&quot;count&quot;:5},
+    {&quot;name&quot;:&quot;pear&quot;,&quot;count&quot;:3},
+    {&quot;name&quot;:&quot;orange&quot;,&quot;count&quot;:16}
+];
+var newArr=[];
+for(var i=0,l=arr.length;i&lt;l;i++){
+    if(arr[i].name===&#39;orange&#39;){
+        newArr.push(arr[i]);
+    }
+}
+</code></pre>
+
+<p>用了filter时:</p>
+
+<pre><code>var arr=[
+    {&quot;name&quot;:&quot;apple&quot;,&quot;count&quot;:2},
+    {&quot;name&quot;:&quot;orange&quot;,&quot;count&quot;:5},
+    {&quot;name&quot;:&quot;pear&quot;,&quot;count&quot;:3},
+    {&quot;name&quot;:&quot;orange&quot;,&quot;count&quot;:16}
+];
+var newArr=arr.filter(function(item){
+    return item.name===&#39;orange&#39;;
+})
+</code></pre>
+
+<h4>4、forEach</h4>
+
+<p><code>forEach()</code>为每个元素执行对应的方法</p>
+
+<pre><code>var arr=[1,2,3,4,5,6];
+    //users the usual &quot;for&quot; loop to iterate
+    for(var i=0,l=arr.length;i&lt;l;i++){
+    console.log(arr[i]);
+}
+
+    //users forEach to iterate
+    arr.forEach(function(item,index){
+    console.log(item);
+})
+</code></pre>
+
+<h4>5、map</h4>
+
+<p><code>map()</code>,对数组的每个元素执行硬顶操作（映射后），会返回一个新数组</p>
+
+<p>不使用map</p>
+
+<pre><code>var oldArr=[{first_name:&quot;Colin&quot;,last_name:&quot;Toh&quot;},{first_name:&quot;Addy&quot;,last_name:&quot;Osmani&quot;},                {first_name:&quot;Yehuda&quot;,last_name:&quot;Katz&quot;}];
+
+function getNewArr(){
+    var newArr={};
+    for(var i=0,l=oldArr.length;i&lt;l;i++){
+        var item=oldarr[i];
+        item.full_name=[item.first_name,item.last_name].join(&#39; &#39;);
+        newArr[i]=item;
+    }
+    return newArr;
+}
+</code></pre>
+
+<p>使用map</p>
+
+<pre><code>var oldArr=[{first_name:&quot;Colin&quot;,last_name:&quot;Toh&quot;},{first_name:&quot;Addy&quot;,last_name:&quot;Osmani&quot;},{first_name:&quot;Yehuda&quot;,last_name:&quot;Katz&quot;}];
+
+function getNewArr(){
+    return oldArr.map(function(item,index){
+        item.full_name=[item.first_name,item.last_name].join(&quot; &quot;);
+        return item;
+    })
+}
+</code></pre>
+
+<h4>6、reduce</h4>
+
+<p><code>reduce()</code>,可以实现累加器的功能，将数组的每个值（从左至右）将其降低到一个值。</p>
+
+<p>统计一个数组中有多少个不重复的单词</p>
+
+<p>不使用reduce时</p>
+
+<pre><code>var arr = [&quot;apple&quot;,&quot;orange&quot;,&quot;apple&quot;,&quot;orange&quot;,&quot;pear&quot;,&quot;orange&quot;];
+function GETwORDcNT(){
+    var obj={};
+    for(var i=0,l=arr.length;i&lt;l;i++){
+        var item=arr[i];
+        obj[item]=(obj[item]+1)||1;
+    }
+    return obj;
+}
+</code></pre>
+
+<p>使用reduce后</p>
+
+<pre><code>var arr = [&quot;apple&quot;,&quot;orange&quot;,&quot;apple&quot;,&quot;orange&quot;,&quot;pear&quot;,&quot;orange&quot;];
+function getWordcnt(){
+    return arr.reduce(function(prev,next){
+        prev[next]=(prev[next]+1)||1;
+        return prev;
+    },{});
+}
+</code></pre>
+
+<ul>
+<li>未完待续。。。。</li>
+</ul>
+
+</body>
+</html>

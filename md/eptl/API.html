@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+   <style type="text/css">
+   /*
+CSS stylesheet is based on killwing's flavored markdown style:
+https://gist.github.com/2937864
+*/
+body{
+    margin: 0 auto;
+    font: 13px/1.231 Helvetica, Arial, sans-serif;
+    color: #444444;
+    line-height: 1;
+    max-width: 960px;
+    padding: 5px;
+}
+h1, h2, h3, h4 {
+    color: #111111;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 16px;
+    padding: 0;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 22px;
+    margin: 20px 0 6px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a:link,a:visited{
+ text-decoration:none;
+}
+a:hover{
+ text-decoration:underline;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 24px;
+    margin-left: 44px;
+}
+li ul, li ul {
+    margin-left: 24px;
+}
+ul, ol {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 540px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 540px;
+    margin-top: 3px;
+}
+
+pre {
+    padding: 0px 4px;
+    max-width: 800px;
+    white-space: pre-wrap;
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+pre code {
+    border: 0px;
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    border-left:.5em solid #40AA53;
+    padding: 0 2em;
+    margin-left:0;
+    max-width: 476px;
+}
+blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+blockquote p {  
+    color: #666;
+    max-width: 460px;
+}
+hr {
+    height: 1px;
+    border: none;
+    border-top: 1px dashed #0066CC
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+}
+/* override default chrome & firefox settings */
+input:not([type="image"]), textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+label,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  display: inline-block;
+  width: 210px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  height: 18px;
+  color: #808080;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+select, input[type=file] {
+  height: 27px;
+  line-height: 27px;
+}
+textarea {
+  height: auto;
+}
+
+/* grey out placeholders */
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+/* buttons */
+button {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #004b9a;
+  border-bottom-color: #003f81;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  color: #fff;
+  background-position: 0 -15px;
+  text-decoration: none;
+}
+button:active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+/* table  */
+table {
+    border-spacing: 0;
+    border: 1px solid #ccc;
+}
+td, th{
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+/* code syntax highlight.
+Documentation: http://www.mdcharm.com/documentation/code_syntax_highlighting.html#custom_your_own
+ */
+pre .literal,
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .javadoc {
+    color: #008000;
+}
+
+pre .keyword,
+pre .css .rule .keyword,
+pre .winutils,
+pre .javascript .title,
+pre .nginx .title,
+pre .subst,
+pre .request,
+pre .status {
+    color: #0000FF;
+    font-weight: bold
+}
+
+pre .number,
+pre .hexcolor,
+pre .python .decorator,
+pre .ruby .constant {
+    color: #0000FF;
+}
+
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula {
+    color: #D14
+}
+
+pre .title,
+pre .id {
+    color: #900;
+    font-weight: bold
+}
+
+pre .javascript .title,
+pre .lisp .title,
+pre .clojure .title,
+pre .subst {
+    font-weight: normal
+}
+
+pre .class .title,
+pre .haskell .type,
+pre .vhdl .literal,
+pre .tex .command {
+    color: #458;
+    font-weight: bold
+}
+
+pre .tag,
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+    color: #000080;
+    font-weight: normal
+}
+
+pre .attribute,
+pre .variable,
+pre .lisp .body {
+    color: #008080
+}
+
+pre .regexp {
+    color: #009926
+}
+
+pre .class {
+    color: #458;
+    font-weight: bold
+}
+
+pre .symbol,
+pre .ruby .symbol .string,
+pre .lisp .keyword,
+pre .tex .special,
+pre .prompt {
+    color: #990073
+}
+
+pre .built_in,
+pre .lisp .title,
+pre .clojure .built_in {
+    color: #0086b3
+}
+
+pre .preprocessor,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .cdata {
+    color: #999;
+    font-weight: bold
+}
+
+pre .deletion {
+    background: #fdd
+}
+
+pre .addition {
+    background: #dfd
+}
+
+pre .diff .change {
+    background: #0086b3
+}
+
+pre .chunk {
+    color: #aaa
+}
+
+pre .markdown .header {
+    color: #800;
+    font-weight: bold;
+}
+
+pre .markdown .blockquote {
+    color: #888;
+}
+
+pre .markdown .link_label {
+    color: #88F;
+}
+
+pre .markdown .strong {
+    font-weight: bold;
+}
+
+pre .markdown .emphasis {
+    font-style: italic;
+}
+   </style>
+   
+   
+</head>
+<body>
+    <h2><strong>API</strong></h2>
+
+<ul>
+<li><a href="#methods">methods</a></li>
+<li><a href="#classes">classes</a></li>
+</ul>
+
+<h3><strong><span id="methods">methods</span></strong></h3>
+
+<p>ETPL初始化时自动创建一个默认的Engine实例，并将其暴露。大多数应用场景可直接使用默认的引擎实例。</p>
+
+<pre><code>var etpl = require( &#39;etpl&#39; );
+</code></pre>
+
+<p><strong>{void} addFilter( {string}name, {function({string}, {...*}):string}filter )</strong></p>
+
+<p>为默认引擎添加过滤器。过滤函数的第一个参数为过滤源字符串，其后的参数可由模板开发者传入。过滤函数必须返回string。</p>
+
+<ul>
+<li>{string}name - 过滤器名称</li>
+<li>{Function}filter - 过滤函数</li>
+</ul>
+
+<pre><code>etpl.addFilter( &#39;markdown&#39;, function ( source, useExtra ) {
+    // ......
+} );
+</code></pre>
+
+<p><strong>{Function} compile( {string}source )</strong></p>
+
+<p>使用默认引擎编译模板。返回第一个target编译后的renderer函数。</p>
+
+<ul>
+<li>{string}source - 模板源代码</li>
+</ul>
+
+<pre><code>var helloRenderer = etpl.compile( &#39;Hello ${name}!&#39; );
+helloRenderer( {name: &#39;ETPL&#39;} ); // Hello ETPL!
+</code></pre>
+
+<p><strong>{void} config( {Object}options )</strong></p>
+
+<p>对默认引擎进行配置，配置参数将合并到引擎现有的参数中。查看配置参数。</p>
+
+<pre><code>etplEngine.config( {
+    defaultFilter: &#39;&#39;
+} );
+{Function} getRenderer( {string}name )
+</code></pre>
+
+<p>从默认引擎中，根据target名称获取编译后的renderer函数。</p>
+
+<pre><code>{string}name - target名称
+etpl.compile( &#39;&lt;!-- target: hello --&gt;Hello ${name}!&#39; );
+var helloRenderer = etpl.getRenderer( &#39;hello&#39; );
+helloRenderer( {name: &#39;ETPL&#39;} ); // Hello ETPL!
+{Function} parse( {string}source )
+</code></pre>
+
+<p>同<code>compile</code>方法。该方法的存在是为了兼容老版本的模板引擎api，不建议使用。</p>
+
+<p><strong>{string} render( {string}name, {Object}data )</strong></p>
+
+<p>使用默认引擎执行模板渲染，返回渲染后的字符串。</p>
+
+<ul>
+<li>{string}name - target名称</li>
+<li>{Object}data - 模板数据。可以是plain object，也可以是带有 <strong>{string}get({string}name)</strong> 方法的对象</li>
+</ul>
+
+<pre><code>etpl.compile( &#39;&lt;!-- target: hello --&gt;Hello ${name}!&#39; );
+etpl.render( &#39;hello&#39;, {name: &#39;ETPL&#39;} ); // Hello ETPL!
+</code></pre>
+
+<h3><strong><span id="classes">classes</span></strong></h3>
+
+<h3><strong>Engine</strong></h3>
+
+<p>不同的引擎实例可有效避免target命名冲突的问题。</p>
+
+<h3><strong>初始化</strong></h3>
+
+<p>下面的代码可以初始化一个新的引擎实例。</p>
+
+<pre><code>var etpl = require( &#39;etpl&#39; );
+var etplEngine = new etpl.Engine();
+</code></pre>
+
+<p>引擎实例的初始化允许传入引擎参数。支持的引擎参数见下面的config方法。</p>
+
+<pre><code>var etpl = require( &#39;etpl&#39; );
+var etplEngine = new etpl.Engine({
+    commandOpen: &#39;&lt;%&#39;,
+    commandClose: &#39;%&gt;&#39;
+});
+</code></pre>
+
+<p><strong>{void} addFilter( {string}name, {function({string}, {...*}):string}filter )</strong></p>
+
+<p>添加过滤器。过滤函数的第一个参数为过滤源字符串，其后的参数可由模板开发者传入。过滤函数必须返回string。</p>
+
+<ul>
+<li>{string}name - 过滤器名称</li>
+<li>{Function}filter - 过滤函数</li>
+</ul>
+
+<pre><code>etplEngine.addFilter( &#39;markdown&#39;, function ( source, useExtra ) {
+    // ......
+} );
+</code></pre>
+
+<p><strong>{Function} compile( {string}source )</strong></p>
+
+<p>编译模板。返回第一个target编译后的renderer函数。</p>
+
+<ul>
+<li>{string}source - 模板源代码</li>
+</ul>
+
+<pre><code>var helloRenderer = etplEngine.compile( &#39;Hello ${name}!&#39; );
+helloRenderer( {name: &#39;ETPL&#39;} ); // Hello ETPL!
+</code></pre>
+
+<p><strong>{void} config( {Object}options )</strong></p>
+
+<p>对引擎进行配置，配置参数将合并到引擎现有的参数中。<a href="config.html" title="查看配置参数">查看配置参数</a>。</p>
+
+<pre><code>etplEngine.config( {
+    defaultFilter: &#39;&#39;
+} );
+</code></pre>
+
+<p><strong>{Function} getRenderer( {string}name )</strong></p>
+
+<p>根据target名称获取编译后的renderer函数。</p>
+
+<ul>
+<li>{string}name - target名称</li>
+</ul>
+
+<pre><code>etplEngine.compile( &#39;&lt;!-- target: hello --&gt;Hello ${name}!&#39; );
+var helloRenderer = etplEngine.getRenderer( &#39;hello&#39; );
+helloRenderer( {name: &#39;ETPL&#39;} ); // Hello ETPL!
+</code></pre>
+
+<p><strong>{string} render( {string}name, {Object}data )</strong></p>
+
+<p>执行模板渲染，返回渲染后的字符串。</p>
+
+<ul>
+<li>{string}name - target名称</li>
+<li>{Object}data - 模板数据。可以是plain object，也可以是带有 <strong>{string}get({string}name)</strong> 方法的对象</li>
+</ul>
+
+<pre><code>etplEngine.compile( &#39;&lt;!-- target: hello --&gt;Hello ${name}!&#39; );
+etplEngine.render( &#39;hello&#39;, {name: &#39;ETPL&#39;} ); // Hello ETPL!
+</code></pre>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+   <style type="text/css">
+   /*CSS stylesheet is based on killwing's flavored markdown style:https://gist.github.com/2937864*/body{    margin: 0 auto;    font: 13px/1.231 Helvetica, Arial, sans-serif;    color: #444444;    line-height: 1;    max-width: 960px;    padding: 5px;}h1, h2, h3, h4 {    color: #111111;    font-weight: 400;}h1, h2, h3, h4, h5, p {    margin-bottom: 16px;    padding: 0;}h1 {    font-size: 28px;}h2 {    font-size: 22px;    margin: 20px 0 6px;}h3 {    font-size: 21px;}h4 {    font-size: 18px;}h5 {    font-size: 16px;}a {    color: #0099ff;    margin: 0;    padding: 0;    vertical-align: baseline;}a:link,a:visited{ text-decoration:none;}a:hover{ text-decoration:underline;}ul, ol {    padding: 0;    margin: 0;}li {    line-height: 24px;    margin-left: 44px;}li ul, li ul {    margin-left: 24px;}ul, ol {    font-size: 14px;    line-height: 20px;    max-width: 540px;}p {    font-size: 14px;    line-height: 20px;    max-width: 540px;    margin-top: 3px;}pre {    padding: 0px 4px;    max-width: 800px;    white-space: pre-wrap;    font-family: Consolas, Monaco, Andale Mono, monospace;    line-height: 1.5;    font-size: 13px;    border: 1px solid #ddd;    background-color: #f7f7f7;    border-radius: 3px;}code {    font-family: Consolas, Monaco, Andale Mono, monospace;    line-height: 1.5;    font-size: 13px;    border: 1px solid #ddd;    background-color: #f7f7f7;    border-radius: 3px;}pre code {    border: 0px;}aside {    display: block;    float: right;    width: 390px;}blockquote {    border-left:.5em solid #40AA53;    padding: 0 2em;    margin-left:0;    max-width: 476px;}blockquote  cite {    font-size:14px;    line-height:20px;    color:#bfbfbf;}blockquote cite:before {    content: '\2014 \00A0';}blockquote p {      color: #666;    max-width: 460px;}hr {    height: 1px;    border: none;    border-top: 1px dashed #0066CC}button,input,select,textarea {  font-size: 100%;  margin: 0;  vertical-align: baseline;  *vertical-align: middle;}button, input {  line-height: normal;  *overflow: visible;}button::-moz-focus-inner, input::-moz-focus-inner {  border: 0;  padding: 0;}button,input[type="button"],input[type="reset"],input[type="submit"] {  cursor: pointer;  -webkit-appearance: button;}input[type=checkbox], input[type=radio] {  cursor: pointer;}/* override default chrome & firefox settings */input:not([type="image"]), textarea {  -webkit-box-sizing: content-box;  -moz-box-sizing: content-box;  box-sizing: content-box;}input[type="search"] {  -webkit-appearance: textfield;  -webkit-box-sizing: content-box;  -moz-box-sizing: content-box;  box-sizing: content-box;}input[type="search"]::-webkit-search-decoration {  -webkit-appearance: none;}label,input,select,textarea {  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  font-size: 13px;  font-weight: normal;  line-height: normal;  margin-bottom: 18px;}input[type=checkbox], input[type=radio] {  cursor: pointer;  margin-bottom: 0;}input[type=text],input[type=password],textarea,select {  display: inline-block;  width: 210px;  padding: 4px;  font-size: 13px;  font-weight: normal;  line-height: 18px;  height: 18px;  color: #808080;  border: 1px solid #ccc;  -webkit-border-radius: 3px;  -moz-border-radius: 3px;  border-radius: 3px;}select, input[type=file] {  height: 27px;  line-height: 27px;}textarea {  height: auto;}/* grey out placeholders */:-moz-placeholder {  color: #bfbfbf;}::-webkit-input-placeholder {  color: #bfbfbf;}input[type=text],input[type=password],select,textarea {  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;  transition: border linear 0.2s, box-shadow linear 0.2s;  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);}input[type=text]:focus, input[type=password]:focus, textarea:focus {  outline: none;  border-color: rgba(82, 168, 236, 0.8);  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);}/* buttons */button {  display: inline-block;  padding: 4px 14px;  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  font-size: 13px;  line-height: 18px;  -webkit-border-radius: 4px;  -moz-border-radius: 4px;  border-radius: 4px;  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);  background-color: #0064cd;  background-repeat: repeat-x;  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);  background-image: -o-linear-gradient(top, #049cdb, #0064cd);  background-image: linear-gradient(top, #049cdb, #0064cd);  color: #fff;  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);  border: 1px solid #004b9a;  border-bottom-color: #003f81;  -webkit-transition: 0.1s linear all;  -moz-transition: 0.1s linear all;  transition: 0.1s linear all;  border-color: #0064cd #0064cd #003f81;  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);}button:hover {  color: #fff;  background-position: 0 -15px;  text-decoration: none;}button:active {  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);}button::-moz-focus-inner {  padding: 0;  border: 0;}/* table  */table {    border-spacing: 0;    border: 1px solid #ccc;}td, th{    border: 1px solid #ccc;    padding: 5px;}/* code syntax highlight.Documentation: http://www.mdcharm.com/documentation/code_syntax_highlighting.html#custom_your_own */pre .literal,pre .comment,pre .template_comment,pre .diff .header,pre .javadoc {    color: #008000;}pre .keyword,pre .css .rule .keyword,pre .winutils,pre .javascript .title,pre .nginx .title,pre .subst,pre .request,pre .status {    color: #0000FF;    font-weight: bold}pre .number,pre .hexcolor,pre .python .decorator,pre .ruby .constant {    color: #0000FF;}pre .string,pre .tag .value,pre .phpdoc,pre .tex .formula {    color: #D14}pre .title,pre .id {    color: #900;    font-weight: bold}pre .javascript .title,pre .lisp .title,pre .clojure .title,pre .subst {    font-weight: normal}pre .class .title,pre .haskell .type,pre .vhdl .literal,pre .tex .command {    color: #458;    font-weight: bold}pre .tag,pre .tag .title,pre .rules .property,pre .django .tag .keyword {    color: #000080;    font-weight: normal}pre .attribute,pre .variable,pre .lisp .body {    color: #008080}pre .regexp {    color: #009926}pre .class {    color: #458;    font-weight: bold}pre .symbol,pre .ruby .symbol .string,pre .lisp .keyword,pre .tex .special,pre .prompt {    color: #990073}pre .built_in,pre .lisp .title,pre .clojure .built_in {    color: #0086b3}pre .preprocessor,pre .pi,pre .doctype,pre .shebang,pre .cdata {    color: #999;    font-weight: bold}pre .deletion {    background: #fdd}pre .addition {    background: #dfd}pre .diff .change {    background: #0086b3}pre .chunk {    color: #aaa}pre .markdown .header {    color: #800;    font-weight: bold;}pre .markdown .blockquote {    color: #888;}pre .markdown .link_label {    color: #88F;}pre .markdown .strong {    font-weight: bold;}pre .markdown .emphasis {    font-style: italic;}
+   </style>
+   
+   
+</head>
+<body>
+    <h2><center>类的介绍</center></h2>
+
+<h2>一、类的三个部分</h2>
+
+<h3>构造函数内的</h3>
+
+<p>这是提供是列对象复用的</p>
+
+<pre><code>var Book=function(){
+    this.name=&quot;a&quot;;
+    this.age=12;
+}
+</code></pre>
+
+<h3>构造函数外的</h3>
+
+<p>直接通过点语法添加的，实例对象访问不到</p>
+
+<pre><code>Book.color=&quot;red&quot;;
+</code></pre>
+
+<h3>是原型中的</h3>
+
+<p>实力化对象可以通过其原型链间接访问到，也是为所有实例化对象所共用的</p>
+
+<pre><code>Book.prototype.say=function(){}
+</code></pre>
+
+<p>或：</p>
+
+<pre><code>Book.prototype={
+    say:function(){
+    }
+}
+</code></pre>
+
+<h2>二、js中继承的实现方法</h2>
+
+<p>js 常用的继承方法有：原型链继承（对象间的继承）、类式继承（构造函数间的继承）
+主要使用js的原型prototype机制或则用apply和call方式实现</p>
+
+<h3>1、原型式继承与类式继承</h3>
+
+<p>类式继承实在子类型构造函数的内部调用超类型的构造函数。严格的类式继承并不常见，一般组合使用</p>
+
+<pre><code>function Super(){
+    this.colors=[&quot;red&quot;,&quot;blue&quot;];
+}
+
+function Sub(){
+    Super.call(this);
+}
+</code></pre>
+
+<p>原型式继承是借助已有的对象创建新的对象，将子类的原型指向父类，就相当于加入了父类这条原型链
+为了让子类继承父类的属性（也包括方法），首先需要定义一个构造函数。然而，将父类的新实例赋值给构造函数的原型。</p>
+
+<pre><code>function Parent()}{
+    this.name=&#39;mike&#39;;
+}
+function Child(){
+    this.age=12;
+}
+Child.prototype=new Parent();//Child继承Parent，通过原型，形成链条
+
+var test=new Child();
+alert(test.age);
+alert(test.name);//得到被继承的属性
+
+function Brothor(){
+    this.weight=60;
+}
+Brother.prototype=new Child();//继续原型链继承
+var brother=new Brother();
+alert(brother.name) //mike
+alert(brother.age); //12
+</code></pre>
+
+<p>以上原型链继承还缺少一环，那就是Object，所有的构造函数都继承自Object。而继承Object是自动完成的，并不需要我们手动继承，name他们的从属关系是怎么样的呢？
+可以通过两种方式确定原型与实例之间的关系，操作符，instanceof和isPrototypeof()方法：</p>
+
+<pre><code>alert(brother instanceof Object) //true
+alert(test instanceof Brother) //false,test是brother的超类
+alert(brother instanceof Child) //true
+alert(brother instanceof Parent) //true
+</code></pre>
+
+<p>只要原型链中出现过的原型，都可以说是该原型链派生的实例的原型，因此，isPrototype()方法也会返回true。</p>
+
+<p>在js中，被继承的函数称为超类型（父类，基类也行），继承的函数称为子类型（子类，派生类）。使用原型继承主要由两个问题：
+一是字面量重写原型会中断关系，使用引用类型的原型，并且子类型还无法给超类型传递参数。</p>
+
+<p>伪类解决引用共享和超类型无法传参的问题，我们可以采用“借用构造函数”技术</p>
+
+<h3>2、借用构造函数（类继承）</h3>
+
+<pre><code>function Parent(age){
+    this.name=[&quot;mike&quot;,&quot;jack&quot;,&quot;smith&quot;];
+    this.age=age;
+}
+
+function Child(age){
+    Parent.call(this,age);
+}
+var test=new Child(21);
+alert(test.age);//21
+alert(test.name);//mike,jack,smith
+</code></pre>
+
+<p>借用构造函数虽然解决了刚才两个问题，但没有原型，复用无从谈起，所以我们需要 原型链+构造函数的模式，这种模式称为‘组合继承’</p>
+
+<h3>3、组合继承</h3>
+
+<pre><code>function Parent(age){
+    this.name=[&quot;mike&quot;,&quot;jack&quot;,&quot;smith&quot;];
+    this.age=age;
+}
+Parent.prototype.run=function(){
+    return this.name+&#39; are both&#39;+this.age;
+}
+function Child(age){
+    Parent.call(this,age);//对象冒充给超类传参
+}
+Child.prototype=new Parent();//原型链继承
+var test=new Child(21);
+alert(test.run());//mike,jack,smith are both21
+</code></pre>
+
+<p>组合式继承是比较常用的一种继承方法，其背后的思路是 使用原型链实现对原型属性和方法的继承，而通过借用构造函数来实现对实例属性的继承。
+这样，既通过在原型上定义方法实现了函数复用，又保证每个实例都有它自己的属性。
+call()的用法：调用一个对象的一个方法，以另一个对象替换当前对象。
+call([thisObj[,arg1[, arg2[, [,.argN]]]]]) </p>
+
+<h3>4、原型式继承</h3>
+
+<p>这种继承借助原型并基于已有的对象创建对象，同时还不用创建自定义类型的方式称为 ‘原型式继承’</p>
+
+<pre><code>function obj(o){
+    function F(){};
+    F.prototype=o;
+    return new F();
+}
+var box = {
+    name:&#39;trigkit4&#39;,
+    arr:[&#39;brother&#39;,&#39;sister&#39;,&#39;baba&#39;]
+}
+var b1=obj(box);
+alert(b1.name); //trigkit4
+
+alert(b1.arr); //brother,sister,baba
+b1.arr.push(&#39;parents&#39;);
+alert(b1.arr); //brother,sister,baba,parents
+
+var b2=obj(box);
+alert(b2.name); //trigkit4
+alert(b2.arr); //brother,sister,baba,parents
+</code></pre>
+
+<p>原型式继承首先在obj()函数内部创建一个临时性的构造函数 ，
+然后将传入的对象作为这个构造函数的原型，最后返回这个临时类型的一个新实例。</p>
+
+<h3>5、寄生式继承</h3>
+
+<p>这种方式是把‘原型式+工场模式’结合起来，目的是为了封装创建的过程</p>
+
+<pre><code>function create(o){
+    var f=obj(o);
+    f.run=function(){
+        return this.arr;//同样，会共享引用
+    }
+    return f;
+}
+</code></pre>
+
+<h5>组合式继承的小问题</h5>
+
+<p>组合继承式js继承最常用的继承方式，但组合继承的超类型在使用过程中会调用两次，一次是创建子类型的时候，一次是子类型构造
+函数内部。</p>
+
+<pre><code>function Parent(name){
+    this.name=name;
+    this.arr=[&quot;哥哥&quot;,&quot;妹妹&quot;,&quot;父母&quot;];
+}
+Parent.prototype.run=function(){
+    return this.name;
+}
+function Child(name,age){
+    Parent.call(this,age);//第二次调用
+    this.age=age;
+}
+Child.prototype=new Parent();//第一次调用
+</code></pre>
+
+<p>以上代码是之前的组合继承，那么寄生组合继承，解决了两次调用的问题</p>
+
+<h3>6、寄生组合继承</h3>
+
+<pre><code>function obj(o){
+    function F(){};
+    F.prototype=o;
+    return new F();
+}
+function create(parent,test){
+    var f = obj(parent.prototype); //创建对象
+    f.constructor=test; //增强对象
+}
+function Parent(name){
+    this.name=name;
+    this.arr=[&#39;brother&#39;,&#39;sister&#39;,&#39;parents&#39;];
+}
+Parent.prototype.run=function(){
+    return this.name; 
+}
+function Child(name,age){
+    Parent.call(this,name);
+    this.age=age;
+}
+create(Parent,Child);//通过这里实现继承
+var test=new Child(&#39;trigkit4&#39;,21);
+test.arr.push(&#39;nephew&#39;);
+alert(test.arr);
+alert(test.run()); //只共享了方法
+
+var test2=new Child(&#39;jack&#39;,22);
+alert(test2.arr);  //引用问题解决
+</code></pre>
+
+<h2>六、call和apply</h2>
+
+<p>全局函数apply和call可以用来改变函数中this的指向，如下：</p>
+
+<pre><code>function foo(){
+    console.log(this.fruit);
+}
+var fruit=&quot;apple&quot;;
+var pack={
+    fruit:&quot;orange&quot;
+}
+foo.apply(window); //&quot;apple&quot;,因此this等于window
+foo.apply(pack); //&quot;orange&quot;
+</code></pre>
+
+</body>
+</html>

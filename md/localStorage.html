@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+   <style type="text/css">
+   /*CSS stylesheet is based on killwing's flavored markdown style:https://gist.github.com/2937864*/body{    margin: 0 auto;    font: 13px/1.231 Helvetica, Arial, sans-serif;    color: #444444;    line-height: 1;    max-width: 960px;    padding: 5px;}h1, h2, h3, h4 {    color: #111111;    font-weight: 400;}h1, h2, h3, h4, h5, p {    margin-bottom: 16px;    padding: 0;}h1 {    font-size: 28px;}h2 {    font-size: 22px;    margin: 20px 0 6px;}h3 {    font-size: 21px;}h4 {    font-size: 18px;}h5 {    font-size: 16px;}a {    color: #0099ff;    margin: 0;    padding: 0;    vertical-align: baseline;}a:link,a:visited{ text-decoration:none;}a:hover{ text-decoration:underline;}ul, ol {    padding: 0;    margin: 0;}li {    line-height: 24px;    margin-left: 44px;}li ul, li ul {    margin-left: 24px;}ul, ol {    font-size: 14px;    line-height: 20px;    max-width: 540px;}p {    font-size: 14px;    line-height: 20px;    max-width: 540px;    margin-top: 3px;}pre {    padding: 0px 4px;    max-width: 800px;    white-space: pre-wrap;    font-family: Consolas, Monaco, Andale Mono, monospace;    line-height: 1.5;    font-size: 13px;    border: 1px solid #ddd;    background-color: #f7f7f7;    border-radius: 3px;}code {    font-family: Consolas, Monaco, Andale Mono, monospace;    line-height: 1.5;    font-size: 13px;    border: 1px solid #ddd;    background-color: #f7f7f7;    border-radius: 3px;}pre code {    border: 0px;}aside {    display: block;    float: right;    width: 390px;}blockquote {    border-left:.5em solid #40AA53;    padding: 0 2em;    margin-left:0;    max-width: 476px;}blockquote  cite {    font-size:14px;    line-height:20px;    color:#bfbfbf;}blockquote cite:before {    content: '\2014 \00A0';}blockquote p {      color: #666;    max-width: 460px;}hr {    height: 1px;    border: none;    border-top: 1px dashed #0066CC}button,input,select,textarea {  font-size: 100%;  margin: 0;  vertical-align: baseline;  *vertical-align: middle;}button, input {  line-height: normal;  *overflow: visible;}button::-moz-focus-inner, input::-moz-focus-inner {  border: 0;  padding: 0;}button,input[type="button"],input[type="reset"],input[type="submit"] {  cursor: pointer;  -webkit-appearance: button;}input[type=checkbox], input[type=radio] {  cursor: pointer;}/* override default chrome & firefox settings */input:not([type="image"]), textarea {  -webkit-box-sizing: content-box;  -moz-box-sizing: content-box;  box-sizing: content-box;}input[type="search"] {  -webkit-appearance: textfield;  -webkit-box-sizing: content-box;  -moz-box-sizing: content-box;  box-sizing: content-box;}input[type="search"]::-webkit-search-decoration {  -webkit-appearance: none;}label,input,select,textarea {  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  font-size: 13px;  font-weight: normal;  line-height: normal;  margin-bottom: 18px;}input[type=checkbox], input[type=radio] {  cursor: pointer;  margin-bottom: 0;}input[type=text],input[type=password],textarea,select {  display: inline-block;  width: 210px;  padding: 4px;  font-size: 13px;  font-weight: normal;  line-height: 18px;  height: 18px;  color: #808080;  border: 1px solid #ccc;  -webkit-border-radius: 3px;  -moz-border-radius: 3px;  border-radius: 3px;}select, input[type=file] {  height: 27px;  line-height: 27px;}textarea {  height: auto;}/* grey out placeholders */:-moz-placeholder {  color: #bfbfbf;}::-webkit-input-placeholder {  color: #bfbfbf;}input[type=text],input[type=password],select,textarea {  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;  transition: border linear 0.2s, box-shadow linear 0.2s;  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);}input[type=text]:focus, input[type=password]:focus, textarea:focus {  outline: none;  border-color: rgba(82, 168, 236, 0.8);  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);}/* buttons */button {  display: inline-block;  padding: 4px 14px;  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  font-size: 13px;  line-height: 18px;  -webkit-border-radius: 4px;  -moz-border-radius: 4px;  border-radius: 4px;  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);  background-color: #0064cd;  background-repeat: repeat-x;  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);  background-image: -o-linear-gradient(top, #049cdb, #0064cd);  background-image: linear-gradient(top, #049cdb, #0064cd);  color: #fff;  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);  border: 1px solid #004b9a;  border-bottom-color: #003f81;  -webkit-transition: 0.1s linear all;  -moz-transition: 0.1s linear all;  transition: 0.1s linear all;  border-color: #0064cd #0064cd #003f81;  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);}button:hover {  color: #fff;  background-position: 0 -15px;  text-decoration: none;}button:active {  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);}button::-moz-focus-inner {  padding: 0;  border: 0;}/* table  */table {    border-spacing: 0;    border: 1px solid #ccc;}td, th{    border: 1px solid #ccc;    padding: 5px;}/* code syntax highlight.Documentation: http://www.mdcharm.com/documentation/code_syntax_highlighting.html#custom_your_own */pre .literal,pre .comment,pre .template_comment,pre .diff .header,pre .javadoc {    color: #008000;}pre .keyword,pre .css .rule .keyword,pre .winutils,pre .javascript .title,pre .nginx .title,pre .subst,pre .request,pre .status {    color: #0000FF;    font-weight: bold}pre .number,pre .hexcolor,pre .python .decorator,pre .ruby .constant {    color: #0000FF;}pre .string,pre .tag .value,pre .phpdoc,pre .tex .formula {    color: #D14}pre .title,pre .id {    color: #900;    font-weight: bold}pre .javascript .title,pre .lisp .title,pre .clojure .title,pre .subst {    font-weight: normal}pre .class .title,pre .haskell .type,pre .vhdl .literal,pre .tex .command {    color: #458;    font-weight: bold}pre .tag,pre .tag .title,pre .rules .property,pre .django .tag .keyword {    color: #000080;    font-weight: normal}pre .attribute,pre .variable,pre .lisp .body {    color: #008080}pre .regexp {    color: #009926}pre .class {    color: #458;    font-weight: bold}pre .symbol,pre .ruby .symbol .string,pre .lisp .keyword,pre .tex .special,pre .prompt {    color: #990073}pre .built_in,pre .lisp .title,pre .clojure .built_in {    color: #0086b3}pre .preprocessor,pre .pi,pre .doctype,pre .shebang,pre .cdata {    color: #999;    font-weight: bold}pre .deletion {    background: #fdd}pre .addition {    background: #dfd}pre .diff .change {    background: #0086b3}pre .chunk {    color: #aaa}pre .markdown .header {    color: #800;    font-weight: bold;}pre .markdown .blockquote {    color: #888;}pre .markdown .link_label {    color: #88F;}pre .markdown .strong {    font-weight: bold;}pre .markdown .emphasis {    font-style: italic;}
+   </style>
+   
+   
+</head>
+<body>
+    <h2><center>localStorage的兼容性实现</center></h2>
+
+<blockquote>
+<p>locStorage 主要用于实现w3c localstorage的模拟<br/>
+在ie中使用uerData实现。<br/>
+主要方法有三个:<br/>
+保存时间为一年。<br/></p>
+
+<ul>
+<li><code>setItem(&#39;key&#39;,&#39;value&#39;);</code><br/></li>
+<li><code>getItem(&#39;key&#39;)</code><br/></li>
+<li><code>removeItem(&#39;key&#39;</code>)<br/></li>
+</ul>
+</blockquote>
+
+<pre><code class="javascript"> <span class="keyword">var</span> locStorage = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+    <span class="keyword">var</span> UserData = {
+        userData: <span class="literal">null</span>,
+        name: location.hostname,
+        <span class="comment">//this.name = "css88.com";</span>
+        init: <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+            <span class="keyword">if</span> (!UserData.userData) {
+                <span class="keyword">try</span> {
+                    UserData.userData = document.createElement(<span class="string">'INPUT'</span>);
+                    UserData.userData.type = <span class="string">"hidden"</span>;
+                    UserData.userData.style.display = <span class="string">"none"</span>;
+                    UserData.userData.addBehavior(<span class="string">"#default#userData"</span>);
+                    document.body.appendChild(UserData.userData);
+                    <span class="keyword">var</span> expires = <span class="keyword">new</span> Date();
+                    expires.setDate(expires.getDate() + <span class="number">365</span>);
+                    UserData.userData.expires = expires.toUTCString();
+                } <span class="keyword">catch</span> (e) {
+                    <span class="keyword">return</span> <span class="literal">false</span>;
+                }
+            }
+            <span class="keyword">return</span> <span class="literal">true</span>;
+        },
+        setItem: <span class="function"><span class="keyword">function</span> <span class="params">(key, value)</span> {</span>
+            <span class="keyword">if</span> (UserData.init()) {
+                UserData.userData.load(UserData.name);
+                UserData.userData.setAttribute(key, value);
+                UserData.userData.save(UserData.name);
+            }
+        },
+        getItem: <span class="function"><span class="keyword">function</span> <span class="params">(key)</span> {</span>
+            <span class="keyword">if</span> (UserData.init()) {
+                UserData.userData.load(UserData.name);
+                <span class="keyword">return</span> UserData.userData.getAttribute(key)
+            }
+        },
+        removeItem: <span class="function"><span class="keyword">function</span> <span class="params">(key)</span> {</span>
+            <span class="keyword">if</span> (UserData.init()) {
+                UserData.userData.load(UserData.name);
+                UserData.userData.removeAttribute(key);
+                UserData.userData.save(UserData.name);
+            }
+
+        }
+    };
+    <span class="keyword">var</span> _locStorage = <span class="literal">null</span>;
+    <span class="keyword">if</span> (<span class="keyword">typeof</span> localStorage == <span class="string">"object"</span>) {
+        _locStorage = localStorage;
+    } <span class="keyword">else</span> {
+        _locStorage = UserData;
+    }
+    <span class="keyword">return</span> {
+        setItem: <span class="function"><span class="keyword">function</span> <span class="params">(map, value)</span> {</span>
+            <span class="keyword">if</span> (<span class="keyword">typeof</span> value != <span class="string">"undefined"</span>) {
+                _locStorage.setItem(map, value);
+            } <span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">typeof</span> map === <span class="string">"object"</span>) {
+                <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> map) {
+                    _locStorage.setItem(i, map[i]);
+                }
+            }
+        },
+        getItem: <span class="function"><span class="keyword">function</span> <span class="params">(key)</span> {</span>
+            <span class="keyword">return</span> _locStorage.getItem(key);
+        },
+        removeItem: <span class="function"><span class="keyword">function</span> <span class="params">(keys)</span> {</span>
+            <span class="keyword">if</span> (<span class="keyword">typeof</span> keys == <span class="string">"string"</span>) {
+                keys = [keys];
+            }
+            <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>, len = keys.length; i &lt; len; i++) {
+                _locStorage.removeItem(keys[i]);
+            }
+        }
+    }
+}();
+</code></pre>
+
+</body>
+</html>
