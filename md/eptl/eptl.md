@@ -42,9 +42,9 @@ ETpl可以在CommonJS/AMD的模块定义环境中使用，也能直接在页面�
 
 通过文档，你可以更详细地了解ETpl的语法格式、使用方法、API等内容。
 
-* 模板语法
-* API
-* 配置参数
+* [模板语法](Syntax.html)
+* [API](API.html)
+* [配置参数](config.html)
  
 ##**Compatibility**
 ---

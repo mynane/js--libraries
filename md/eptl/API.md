@@ -1,9 +1,9 @@
 ##**API**
 
-* methods
-* classes
+* [methods](#methods)
+* [classes](#classes)
 
-###**methods**
+###**<span id="methods">methods</span>**
 
 ETPL初始化时自动创建一个默认的Engine实例，并将其暴露。大多数应用场景可直接使用默认的引擎实例。
 ```
@@ -62,7 +62,7 @@ helloRenderer( {name: 'ETPL'} ); // Hello ETPL!
 etpl.compile( '<!-- target: hello -->Hello ${name}!' );
 etpl.render( 'hello', {name: 'ETPL'} ); // Hello ETPL!
 ```
-###**classes**
+###**<span id="classes">classes</span>**
 
 ###**Engine**
 
@@ -107,7 +107,7 @@ helloRenderer( {name: 'ETPL'} ); // Hello ETPL!
 ```
 **{void} config( {Object}options )**
 
-对引擎进行配置，配置参数将合并到引擎现有的参数中。[查看配置参数](https://github.com/mynane/etpl/blob/master/doc/config.md '查看配置参数')。
+对引擎进行配置，配置参数将合并到引擎现有的参数中。[查看配置参数](config.html '查看配置参数')。
 ```
 etplEngine.config( {
     defaultFilter: ''
