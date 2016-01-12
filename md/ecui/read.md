@@ -6,7 +6,7 @@
 - [模板引擎](doc/etpl.html)
 
 ###**整体概述**
-ecui主要有6大功能区域+独立的模板引擎
+ecui主要有7大功能区域+独立的模板引擎
 >1.浏览器检测
 ```javascript
 ecui.browser
@@ -31,6 +31,8 @@ ecui.ui
 ```javascript
 ecui.util
 ```
+>7.esr路由
+
 
 ####ecui.browser
 >`firefoxversion`  火狐的版本    
